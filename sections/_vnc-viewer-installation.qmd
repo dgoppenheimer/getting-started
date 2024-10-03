@@ -1,0 +1,11 @@
+### RealVNC Viewer
+
+To connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses [RealVNC Server](https://www.realvnc.com/en/connect/download/vnc/) to which we can connect using the client software, [RealVNC Viewer](https://www.realvnc.com/en/connect/download/viewer/).
+
+[Download](https://www.realvnc.com/en/connect/download/viewer/) and install the software following the onscreen instructions (for macOS, drag the app to the *Applications* folder).
+
+#### Troubleshooting
+
+copy and paste to NMRbox stops working
+
+:   In Terminal on NMRbox, type the following: `vncconfig &` and hit return. See [How to fix VNC Viewer copy-paste not working](https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html) for additional help.

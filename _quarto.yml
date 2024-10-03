@@ -1,21 +1,29 @@
 project:
   type: book
+  resources:
+    - "/assets/*.png"
+    - "/assets/*.glb"
 
 book:
-  title: "getting-started"
-  author: "Norah Jones"
+  title: "Getting Started"
+  author: "David G. Oppenheimer"
   date: "10/2/2024"
   chapters:
     - index.qmd
     - intro.qmd
     - summary.qmd
+    - software-needed.qmd
+    - scratch-pad.qmd
     - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: yeti         #  spacelab or yeti
+    css: styles.css
+    toc: true
+    toc-location: right
   pdf:
     documentclass: scrreprt
 

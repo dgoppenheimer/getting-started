@@ -1,0 +1,6 @@
+1.  Go to the [ChimeraX download page](https://www.cgl.ucsf.edu/chimerax/download.html).
+2.  Download the installer appropriate for your operating system.
+3.  Accept the license agreement.
+4.  Follow the instructions for your operating system. For example, on macOS (M2 chip):
+5.  Open the disk image.
+6.  Drag the ChimeraX application to your Applications folder.

@@ -1,0 +1,50 @@
+### macOS and Linux
+
+Git is pre-installed on macOS and Linux computers, but users may want to update to the latest version.
+
+On Macs, installation of Git is easiest using a package manager like [Homebrew](https://brew.sh/). If you do not have Homebrew installed, follow the instructions on the [Homebrew homepage](https://brew.sh/). Then install Git with:
+
+``` bash
+brew install git
+```
+
+Check the installation by opening the terminal tab in RStudio (or use whatever terminal you already have open) and entering:
+
+``` zsh
+git --version
+```
+
+#### Set the git path in RStudio
+
+To get RStudio to use the updated Git, you need to tell RStudio where to find the newly installed Git. First, get the path to the Git executable by typing:
+
+``` zsh
+which git
+```
+
+![RStudio Terminal window](../assets/git-version.png){.lightbox fig-align="left" width="60%"}
+
+Next, in RStudio, go to *Tools* → *Global Options*. You will get the menu in *(a)*:
+
+::: {#fig-git layout-ncol="2" layout-valign="bottom"}
+![Global Options](../assets/git-path.png){#fig-options .lightbox}
+
+![git path](../assets/git-path-browse.png){#fig-path .lightbox}
+
+Setting the Git path in RStudio
+:::
+
+1.  Choose *Git/SVN*.
+2.  Browse to `git` using the path obtained from the `which git` command. See *(b)*, above.
+3.  Click *Apply*.
+4.  Click *OK*.
+
+::: callout-note
+The `git` executable in `/opt/homebrew/bin/git` is an alias that points to `/opt/homebrew/Cellar/git/2.45.0/bin/git`. When you browse to `/opt/homebrew/bin/git`, it gets resolved to the correct path.
+:::
+
+Now RStudio will use the updated Git.
+
+### Windows
+
+Windows users should go to the [Git website](https://git-scm.com/) to get the latest Windows build.

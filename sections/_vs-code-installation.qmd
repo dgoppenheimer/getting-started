@@ -1,0 +1,6 @@
+Download and launch the installer and follow the instructions.
+
+[Visual Studio Code](https://code.visualstudio.com/)
+
+
+

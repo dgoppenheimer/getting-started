@@ -1,0 +1,109 @@
+# Software Needed {#sec-software-needed}
+
+## R and RStudio
+
+{{< include sections/_r-rstudio-installation.qmd >}}
+
+## Git and a GitHub Account
+
+[Git and GitHub](https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md)
+
+::: callout-tip
+We will use `git` within RStudio. On macOS, RStudio with echo the mac terminal. I am using [Oh My Zsh](https://ohmyz.sh/) as my `zsh` framework, and [iTerm2](https://iterm2.com/) as my terminal emulator rather than the macOS default terminal application. I also have the latest `git` version installed through [Homebrew](https://brew.sh/).
+
+This means that I need to adjust the settings in RStudio to use my `zsh` environment. Go to *Tools* → *Global Options* → *Terminal* and choose `Zsh` from the drop-down menu for the *New terminals open with* option.
+:::
+
+## VS Code
+
+{{< include sections/_vs-code-installation.qmd >}}
+
+## Zotero
+
+{{< include sections/_zotero-installation.qmd >}}
+
+## ChimeraX
+
+{{< include sections/_chimerax-installation.qmd >}}
+
+### ISOLDE plugin for ChimeraX
+
+{{< include sections/_isolde-installation.qmd >}}
+
+## RealVNC Viewer
+
+{{< include sections/_vnc-viewer-installation.qmd >}}
+
+## AmberTools {#ambertools}
+
+{{< include sections/_ambertools-installation.qmd >}}
+
+## Optional Software
+
+### Anaconda
+
+#### Update Homebrew
+
+In terminal:
+
+``` bash
+cd ~
+brew update       # <1>
+brew upgrade      # <2>
+```
+
+1.  Update the Homebrew package manager.
+2.  Upgrade the packages in Homebrew. *Note*: This can take a long time (hours) depending on how many packages need upgrading.
+
+#### Install Anaconda
+
+```{r}
+#| eval: false
+brew install --cask anaconda
+```
+
+After installation is complete, add the path to `.zshrc` and restart shell.
+
+``` bash
+echo 'export PATH="/usr/local/Homebrew/anaconda3/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+#### Activate Anaconda
+
+``` bash
+source /usr/local/Homebrew/anaconda3/bin/activate   # <1>
+conda init zsh    # <2>
+```
+
+1.  Use the path to the Homebrew-installed Anaconda.
+2.  Initialize your preferred shell to work with `conda.`
+
+Test the installation.
+
+``` bash
+conda --version
+conda 25.4.0
+```
+
+✅ Success!
+
+#### Create and activate a `conda` Environment for the Plumed Masterclass Tutuorial
+
+``` bash
+conda create --name plumed-masterclass-2022
+```
+
+Activate the environment with:
+
+``` bash
+conda activate plumed-masterclass-2022
+```
+
+::: callout-note
+To deactivate an active environment, use
+
+``` bash
+conda deactivate
+```
+:::

@@ -1,0 +1,20 @@
+Go to [RStudio Desktop download page](https://posit.co/download/rstudio-desktop/) to download the R and RStudio Desktop installers.
+
+::: {.callout-note}
+You need to install R first, then RStudio.
+:::
+
+The R link will take you to the [The Comprehensive R Archive Network](https://cran.rstudio.com/) where you can download an R installer for your operating system.
+
+The RStudio link will download the apropriate installer for your operating system. 
+
+Download and launch the installers and follow the installation instructions.
+
+
+
+
+
+
+
+
+

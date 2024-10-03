@@ -1,0 +1,19 @@
+### Zotero Desktop
+
+Zotero is available for macOS, Windows, Linux, and iOS.
+
+Download Zotero from the [Zotero website](https://www.zotero.org/).
+
+Installation is straightforward, but [installation instructions](Installation%20Instructions) are available if needed.
+
+### Zotero Connector
+
+Also install the [Zotero Connector](https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?pli=1) for the Chrome web browser for easy importing of items into your Zotero library.
+
+### Better BibTeX for Zotero
+
+To easily cite references in your Quarto documents in RStudio, install the [Better BibTeX plugin](https://retorque.re/zotero-better-bibtex/).
+
+### Zotero 7 Beta
+
+There is a [beta release for Zotero 7](https://www.zotero.org/support/beta_builds). This has (I believe) a nicer interface, and new features. See the [Zotero 7 beta announcement](https://forums.zotero.org/discussion/105094/announcing-the-zotero-7-beta) for more information.
