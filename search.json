@@ -2,7 +2,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "getting-started",
+    "title": "Getting Started",
     "section": "",
     "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
@@ -27,6 +27,96 @@
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html",
+    "href": "software-needed.html",
+    "title": "3  Software Needed",
+    "section": "",
+    "text": "3.1 R and RStudio\nGo to RStudio Desktop download page to download the R and RStudio Desktop installers.\nThe R link will take you to the The Comprehensive R Archive Network where you can download an R installer for your operating system.\nThe RStudio link will download the apropriate installer for your operating system.\nDownload and launch the installers and follow the installation instructions.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#r-and-rstudio",
+    "href": "software-needed.html#r-and-rstudio",
+    "title": "3  Software Needed",
+    "section": "",
+    "text": "Note\n\n\n\nYou need to install R first, then RStudio.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#git-and-a-github-account",
+    "href": "software-needed.html#git-and-a-github-account",
+    "title": "3  Software Needed",
+    "section": "3.2 Git and a GitHub Account",
+    "text": "3.2 Git and a GitHub Account\nGit and GitHub\n\n\n\n\n\n\nTip\n\n\n\nWe will use git within RStudio. On macOS, RStudio with echo the mac terminal. I am using Oh My Zsh as my zsh framework, and iTerm2 as my terminal emulator rather than the macOS default terminal application. I also have the latest git version installed through Homebrew.\nThis means that I need to adjust the settings in RStudio to use my zsh environment. Go to Tools → Global Options → Terminal and choose Zsh from the drop-down menu for the New terminals open with option.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#vs-code",
+    "href": "software-needed.html#vs-code",
+    "title": "3  Software Needed",
+    "section": "3.3 VS Code",
+    "text": "3.3 VS Code\nDownload and launch the installer and follow the instructions.\nVisual Studio Code",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#zotero",
+    "href": "software-needed.html#zotero",
+    "title": "3  Software Needed",
+    "section": "3.4 Zotero",
+    "text": "3.4 Zotero\n\n3.4.1 Zotero Desktop\nZotero is available for macOS, Windows, Linux, and iOS.\nDownload Zotero from the Zotero website.\nInstallation is straightforward, but installation instructions are available if needed.\n\n\n3.4.2 Zotero Connector\nAlso install the Zotero Connector for the Chrome web browser for easy importing of items into your Zotero library.\n\n\n3.4.3 Better BibTeX for Zotero\nTo easily cite references in your Quarto documents in RStudio, install the Better BibTeX plugin.\n\n\n3.4.4 Zotero 7 Beta\nThere is a beta release for Zotero 7. This has (I believe) a nicer interface, and new features. See the Zotero 7 beta announcement for more information.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#chimerax",
+    "href": "software-needed.html#chimerax",
+    "title": "3  Software Needed",
+    "section": "3.5 ChimeraX",
+    "text": "3.5 ChimeraX\n\nGo to the ChimeraX download page.\nDownload the installer appropriate for your operating system.\nAccept the license agreement.\nFollow the instructions for your operating system. For example, on macOS (M2 chip):\nOpen the disk image.\nDrag the ChimeraX application to your Applications folder.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#realvnc-viewer",
+    "href": "software-needed.html#realvnc-viewer",
+    "title": "3  Software Needed",
+    "section": "3.6 RealVNC Viewer",
+    "text": "3.6 RealVNC Viewer\n\n3.6.1 RealVNC Viewer\nTo connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, RealVNC Viewer.\nDownload and install the software following the onscreen instructions (for macOS, drag the app to the Applications folder).\n\n3.6.1.1 Troubleshooting\n\ncopy and paste to NMRbox stops working\n\nIn Terminal on NMRbox, type the following: vncconfig & and hit return. See How to fix VNC Viewer copy-paste not working for additional help.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "software-needed.html#optional-software",
+    "href": "software-needed.html#optional-software",
+    "title": "3  Software Needed",
+    "section": "3.7 Optional Software",
+    "text": "3.7 Optional Software\n\n3.7.1 Anaconda\n\n3.7.1.1 Update Homebrew\nIn terminal:\ncd ~\n1brew update\n2brew upgrade\n\n1\n\nUpdate the Homebrew package manager.\n\n2\n\nUpgrade the packages in Homebrew. Note: This can take a long time (hours) depending on how many packages need upgrading.\n\n\n\n\n3.7.1.2 Install Anaconda\n\nbrew install --cask anaconda\n\nAfter installation is complete, add the path to .zshrc and restart shell.\necho 'export PATH=\"/usr/local/Homebrew/anaconda3/bin:$PATH\"' &gt;&gt; ~/.zshrc\nsource ~/.zshrc\n\n\n3.7.1.3 Activate Anaconda\n1source /usr/local/Homebrew/anaconda3/bin/activate\n2conda init zsh\n\n1\n\nUse the path to the Homebrew-installed Anaconda.\n\n2\n\nInitialize your preferred shell to work with conda.\n\n\nTest the installation.\nconda --version\nconda 25.4.0\n✅ Success!\n\n\n3.7.1.4 Create and activate a conda Environment for the Plumed Masterclass Tutuorial\nconda create --name plumed-masterclass-2022\nActivate the environment with:\nconda activate plumed-masterclass-2022\n\n\n\n\n\n\nNote\n\n\n\nTo deactivate an active environment, use\nconda deactivate",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+    ]
+  },
+  {
+    "objectID": "scratch-pad.html",
+    "href": "scratch-pad.html",
+    "title": "4  Scratch Pad",
+    "section": "",
+    "text": "Just a place for quick notes",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scratch Pad</span>"
     ]
   },
   {
