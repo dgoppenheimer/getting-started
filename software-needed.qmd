@@ -26,17 +26,9 @@ This means that I need to adjust the settings in RStudio to use my `zsh` environ
 
 {{< include sections/_chimerax-installation.qmd >}}
 
-### ISOLDE plugin for ChimeraX
-
-{{< include sections/_isolde-installation.qmd >}}
-
 ## RealVNC Viewer
 
 {{< include sections/_vnc-viewer-installation.qmd >}}
-
-## AmberTools {#ambertools}
-
-{{< include sections/_ambertools-installation.qmd >}}
 
 ## Optional Software
 
