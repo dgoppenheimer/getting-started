@@ -1,3 +1,7 @@
+---
+engine: knitr
+jupyter: python3
+---
 # Software Needed {#sec-software-needed}
 
 ## R and RStudio
@@ -38,7 +42,11 @@ This means that I need to adjust the settings in RStudio to use my `zsh` environ
 
 In terminal:
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 cd ~
 brew update       # <1>
 brew upgrade      # <2>
@@ -49,21 +57,32 @@ brew upgrade      # <2>
 
 #### Install Anaconda
 
-```{r}
+```{zsh}
 #| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 brew install --cask anaconda
 ```
 
 After installation is complete, add the path to `.zshrc` and restart shell.
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 echo 'export PATH="/usr/local/Homebrew/anaconda3/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
 
 #### Activate Anaconda
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 source /usr/local/Homebrew/anaconda3/bin/activate   # <1>
 conda init zsh    # <2>
 ```
@@ -73,7 +92,11 @@ conda init zsh    # <2>
 
 Test the installation.
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 conda --version
 conda 25.4.0
 ```
@@ -82,20 +105,32 @@ conda 25.4.0
 
 #### Create and activate a `conda` Environment for the Plumed Masterclass Tutuorial
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 conda create --name plumed-masterclass-2022
 ```
 
 Activate the environment with:
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 conda activate plumed-masterclass-2022
 ```
 
 ::: callout-note
 To deactivate an active environment, use
 
-``` bash
+```{zsh}
+#| eval: false
+#| echo: true
+#| filename: "Terminal"
+
 conda deactivate
 ```
 :::
