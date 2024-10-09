@@ -13,7 +13,10 @@ jupyter: python3
 [Git and GitHub](https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md)
 
 ::: callout-tip
-We will use `git` within RStudio. On macOS, RStudio with echo the mac terminal. I am using [Oh My Zsh](https://ohmyz.sh/) as my `zsh` framework, and [iTerm2](https://iterm2.com/) as my terminal emulator rather than the macOS default terminal application. I also have the latest `git` version installed through [Homebrew](https://brew.sh/).
+We will use `git` within RStudio. On macOS, RStudio will echo the mac terminal. I am using [Oh My Zsh](https://ohmyz.sh/) as my `zsh` framework, and [iTerm2](https://iterm2.com/) as my terminal emulator rather than the macOS default terminal application. I also have the latest `git` version installed through [Homebrew](https://brew.sh/).
+
+Update: I switched my terminal emulator to [Wezterm](https://wezfurlong.org/wezterm/index.html). I installed the [Starship](https://starship.rs/) prompt to customize my terminal environment. I installed both using Homebrew. 
+
 
 This means that I need to adjust the settings in RStudio to use my `zsh` environment. Go to *Tools* → *Global Options* → *Terminal* and choose `Zsh` from the drop-down menu for the *New terminals open with* option.
 :::
