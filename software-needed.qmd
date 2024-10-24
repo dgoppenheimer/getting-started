@@ -10,6 +10,8 @@ jupyter: python3
 
 ## Git and a GitHub Account
 
+You can get all you need to know about git from the [Pro Git Book](https://git-scm.com/book/en/v2). Great introduction to version control and git. 
+
 [Git and GitHub](https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md)
 
 ::: callout-tip
@@ -20,6 +22,26 @@ Update: I switched my terminal emulator to [Wezterm](https://wezfurlong.org/wezt
 
 This means that I need to adjust the settings in RStudio to use my `zsh` environment. Go to *Tools* → *Global Options* → *Terminal* and choose `Zsh` from the drop-down menu for the *New terminals open with* option.
 :::
+
+### Git Tutorials
+
+#### Videos
+
+- [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- [Git Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=CvUiKWv2-C0)
+
+#### Text-based
+
+- [Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
+
+#### More Guides to Git
+
+- [Introduction to Version Control ](https://www.atlassian.com/git/tutorials/what-is-version-control)
+  This is hosted by Atlassian, a company that uses their own cloud-based git repository called BitBucket. We will be using GitHub for all our work, so if you try tutorials on this site, remember to use `github` instead of `bitbucket` when connecting to the remote repository. Focus on the *Beginner* and *Getting Started* sections. 
+
+- [An "adavanced beginner" guide to git](https://think-like-a-git.net/sections/about-this-site.html)
+
+
 
 ## VS Code
 
