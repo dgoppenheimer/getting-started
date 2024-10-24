@@ -10,15 +10,25 @@ jupyter: python3
 
 ## Git and a GitHub Account
 
-You can get all you need to know about git from the [Pro Git Book](https://git-scm.com/book/en/v2). Great introduction to version control and git. 
+<br/> ![in case of fire](assets/in_case_of_fire2.png){fig-align="left" width="50%"}
 
-[Git and GitHub](https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md)
+What is version control?
+
+> Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time[^git-and-github-1].
+
+[^git-and-github-1]: from the Atlassian webpage on [What is version control?](https://www.atlassian.com/git/tutorials/what-is-version-control)
+
+You can get all you need to know about git from the [Pro Git Book](https://git-scm.com/book/en/v2). This is a great introduction to version control and git. 
+
+### User Manual
+
+[Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+This is an excellent resource for all things Git, GitHub, and RStudio. Use the left navigation to Quickly find relevant topics for how to integrate Git and GitHub with RStudio.
+
 
 ::: callout-tip
-We will use `git` within RStudio. On macOS, RStudio will echo the mac terminal. I am using [Oh My Zsh](https://ohmyz.sh/) as my `zsh` framework, and [iTerm2](https://iterm2.com/) as my terminal emulator rather than the macOS default terminal application. I also have the latest `git` version installed through [Homebrew](https://brew.sh/).
-
-Update: I switched my terminal emulator to [Wezterm](https://wezfurlong.org/wezterm/index.html). I installed the [Starship](https://starship.rs/) prompt to customize my terminal environment. I installed both using Homebrew. 
-
+We will use `git` within RStudio. On macOS, RStudio will echo the mac terminal. I am using [Oh My Zsh](https://ohmyz.sh/) as my `zsh` framework, and [Wezterm](https://wezfurlong.org/wezterm/index.html) as my terminal emulator rather than the macOS default terminal application. I also have the latest `git` version installed through [Homebrew](https://brew.sh/). I installed the [Starship](https://starship.rs/) prompt (using Homebrew) to customize my terminal environment.  
 
 This means that I need to adjust the settings in RStudio to use my `zsh` environment. Go to *Tools* → *Global Options* → *Terminal* and choose `Zsh` from the drop-down menu for the *New terminals open with* option.
 :::
@@ -56,12 +66,191 @@ Here are the learning objectives for the git section. After taking the tutorials
 
 - [Introduction to Version Control ](https://www.atlassian.com/git/tutorials/what-is-version-control)
   This is hosted by Atlassian, a company that uses their own cloud-based git repository called BitBucket. We will be using GitHub for all our work, so if you try tutorials on this site, remember to use `github` instead of `bitbucket` when connecting to the remote repository. Focus on the *Beginner* and *Getting Started* sections. 
-
+- [Git and GitHub](https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md)
 - [An "adavanced beginner" guide to git](https://think-like-a-git.net/sections/about-this-site.html)
+
+## Install Git
+
+{{< include sections/_git-installation.qmd >}}
+
+## Get a GitHub Account
+
+### Linking RStudio to GitHub
+
+#### ssh keys
+
+See [Chapter 10 Set up keys for SSH](https://happygitwithr.com/ssh-keys). I already have a key pair that I have used for GitHub.
+
+1.  Add key to `ssh-agent`. Use the following command in the terminal:
+
+    ``` bash
+    eval "$(ssh-agent -s)"
+    ```
+
+    You should see a response like the following, except the `pid` number will likely be different.
+
+    ``` bash
+    Agent pid 15360
+    ```
+
+2.  If you use MacOS \> 10.12.1, create a file `~/.ssh/config` with the following contents:
+
+    ``` bash
+    Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_ed25519
+    ```
+
+3.  Add your key to the `ssh-agent`.
+
+    ``` bash
+    ssh-add --apple-load-keychain ~/.ssh/id_ed25519
+    ```
+
+    You should now be able to push to GitHub!
+
+If you are asked for a username and password after setting ssh keys, try the following:
+
+``` bash
+git remote -v
+origin  https://github.com/dgoppenheimer/notebook-template.git (fetch)
+origin  https://github.com/dgoppenheimer/notebook-template.git (push)
+```
+
+If you get the `https://...` response from git, then you need to change how you access the remote repository.
+
+``` bash
+git remote set-url origin git@github.com:dgoppenheimer/notebook-template.git
+```
+
+Now, you should be able to push without needed to enter a username/password.
+
+## Get the Notebook
+
+1.  Ask to be a collaborator on the `notebook-template` repository.
+
+2.  Click the *notifications* icon on GitHub.
+
+    ![](../assets/github-notification1.png){.lightbox fig-align="left" width="75%"}
+
+3.  On the notifications page, click the *invitation to join ...* row.
+
+    ![](../assets/github-colab.png){.lightbox fig-align="left" width="75%"}
+
+4.  Click the *Accept* button to accept the invitation.
+
+    ![](../assets/github-accept.png){.lightbox fig-align="left" width="75%"}
+
+5.  Click the *Fork* button to create your own fork of this project.
+
+    ![](../assets/github-fork.png){.lightbox fig-align="left" width="75%"}
+
+6.  Give the project a new name. Use a name that describes the project (Hif1alpha, p53TAD, etc.). Here I chose `test-fork-notebook` because I am using this fork for testing purposes. Then click *Create fork*.
+
+    ![](../assets/github-fork-name.png){.lightbox fig-align="left" width="75%"}
+
+    Now you have your own copy of the Notebook template.
+
+7.  Clone the forked repository. On your local computer, Create a new project in RStudio. The *New Project Wizard* will open. Choose the *Version Control* option.
+
+    ![](../assets/rstudio-new-project.png){.lightbox fig-align="left" width="75%"}
+
+8.  Choose the *Git* option.
+
+    ![](../assets/rstudio-git-project.png){.lightbox fig-align="left" width="75%"}
+
+9.  Go to your repository page on GitHub in your browser.
+
+    1.  Click the *Code* button.
+    2.  Choose *HTTPS*.
+    3.  Copy the URL to your clipboard.
+
+    ![](../assets/github-project-url.png){.lightbox fig-align="left" width="75%"}
+
+10. Go back to the *RStudio New Project Wizard* window.
+
+    1.  Paste in the URL that you copied from your GitHub project page.
+    2.  Choose a name for the directory for the project. I usually make the directory name the same as the GitHub project name, in this case, `test-fork-notebook`.
+    3.  Click *Create Project*. The project will be cloned into the directory that you specified.
+
+    ![](../assets/rstudio-git-project2.png){.lightbox fig-align="left" width="75%"}
+
+    You now have your new project in your local directory linked to the repository in GitHub. Make changes/additions, do `git add .`, `git commit -m "added new files"`, and `git push`, to push the changes to GitHub.
+
+## Keeping the forked Notebook in sync with the original project
+
+Hopefully you will not need to do this often, but the steps below will import any changes to the original project while keeping all the changes you have made to the forked project.
+
+### Define the `upstream` repository
+
+From [GitHub Docs Configuring a remote repository for a fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork).
+
+1.  Open Terminal.
+
+2.  List the current configured remote repository for your fork.
+
+    ``` bash
+    $ git remote -v
+    > origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (fetch)
+    > origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (push)
+    ```
+
+3.  Specify a new remote `upstream` repository that will be synced with the fork. This is the original repository that we created our fork from.
+
+    ``` bash
+    git remote add upstream https://github.com/dgoppenheimer/notebook-template.git
+    ```
+
+4.  Verify the new upstream repository you've specified for your fork.
+
+    ``` bash
+    git remote -v
+    origin  https://github.com/dgo-testing/test-fork-notebook.git (fetch)
+    origin  https://github.com/dgo-testing/test-fork-notebook.git (push)
+    upstream https://github.com/dgoppenheimer/notebook-template.git (fetch)
+    upstream https://github.com/dgoppenheimer/notebook-template.git (push)
+    ```
+
+### Sync the upstream repository with your fork
+
+1.  Fetch the branches and their respective commits from the upstream repository. Commits to `BRANCH-NAME` will be stored in the local branch `upstream/BRANCH-NAME`.
+
+    ``` bash
+    $ git fetch upstream
+    > From https://github.com/dgoppenheimer/notebook-template
+    > * [new branch]      main       -> upstream/main
+    ```
+
+    I made some changes to `notebook-template` and committed, and pushed to GitHub.
+
+    ``` bash
+    $ git fetch upstream
+    remote: Enumerating objects: 18, done.
+    > remote: Counting objects: 100% (18/18), done.
+    > remote: Compressing objects: 100% (13/13), done.
+    > remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0
+    > Unpacking objects: 100% (14/14), 1.71 MiB | 4.75 MiB/s, done.
+    > From https://github.com/dgoppenheimer/notebook-template
+    >    dae15a8..c1a638a  main       -> upstream/main
+    ```
+
+2.  Check out your fork's local default branch - in this case, we use `main.`
+
+    ``` bash
+    $ git checkout main
+    > Switched to branch 'main'
+    ```
+
+3.  Merge the changes from the upstream default branch - in this case, `upstream/main` - into your local default branch. This brings your fork's default branch into sync with the upstream repository, without losing your local changes.
+
+    ``` bash
+    git merge upstream/main -m "updating fork from upstream"
+    ```
 
 ### Assessments
 
-Let's see what you have learned.
+Let's see what you have learned. You should have accomplished all of the tasks below if you were successful with the tasks listed above.
 
 1. Fork the `notebook-template` project from GitHub.
 2. Rename the project `<your last name>-notebook` (without the `< >` symbols).
@@ -71,6 +260,7 @@ Let's see what you have learned.
 5. Add and commit the project to your local repository.
 6. Push the changes to your remote repository.
 5. Invite me to clone the your notebook. Use `oppenhe@ufl.edu`.
+
 
 ## VS Code
 

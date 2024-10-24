@@ -24,8 +24,6 @@ format:
     css: styles.css
     toc: true
     toc-location: right
-  pdf:
-    documentclass: scrreprt
 engine: knitr
 date: last-modified
 date-format: iso
