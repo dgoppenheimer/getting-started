@@ -25,14 +25,32 @@ This means that I need to adjust the settings in RStudio to use my `zsh` environ
 
 ### Git Tutorials
 
+::: {.callout-important}
+
+Here are the learning objectives for the git section. After taking the tutorials, you will be able to:
+
+1. Create a GitHub account.
+2. Install Git on your local computer.
+3. Create `ssh` keys to connect your local computer to GitHub.
+4. Create a project and push it to GitHub.
+5. Fork a project from GitHub.
+
+:::
+
 #### Videos
 
 - [Git and GitHub for Beginners - Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [Git Tutorial for Absolute Beginners](https://www.youtube.com/watch?v=CvUiKWv2-C0)
+- [How to setup SSH in GitHub by example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux)
+- [How to SSH into GitHub on Windows example](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example)
+- [How to Fork a GitHub Repository](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/)
 
 #### Text-based
 
 - [Learn the Basics of Git in Under 10 Minutes](https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/)
+- [How to Fork a GitHub Repository](https://www.freecodecamp.org/news/how-to-fork-a-github-repository/)
+- [Fork a repository](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo)
+
 
 #### More Guides to Git
 
