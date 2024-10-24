@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-03">
+<meta name="dcterms.date" content="2024-10-24">
 
 <title>Getting Started - 3&nbsp; Software Needed</title>
 <style>
@@ -76,6 +76,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -189,23 +192,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#r-and-rstudio" id="toc-r-and-rstudio" class="nav-link active" data-scroll-target="#r-and-rstudio"><span class="header-section-number">3.1</span> R and RStudio</a></li>
-  <li><a href="#git-and-a-github-account" id="toc-git-and-a-github-account" class="nav-link" data-scroll-target="#git-and-a-github-account"><span class="header-section-number">3.2</span> Git and a GitHub Account</a></li>
-  <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code"><span class="header-section-number">3.3</span> VS Code</a></li>
-  <li><a href="#zotero" id="toc-zotero" class="nav-link" data-scroll-target="#zotero"><span class="header-section-number">3.4</span> Zotero</a>
+  <li><a href="#git-and-a-github-account" id="toc-git-and-a-github-account" class="nav-link" data-scroll-target="#git-and-a-github-account"><span class="header-section-number">3.2</span> Git and a GitHub Account</a>
   <ul class="collapse">
-  <li><a href="#zotero-desktop" id="toc-zotero-desktop" class="nav-link" data-scroll-target="#zotero-desktop"><span class="header-section-number">3.4.1</span> Zotero Desktop</a></li>
-  <li><a href="#zotero-connector" id="toc-zotero-connector" class="nav-link" data-scroll-target="#zotero-connector"><span class="header-section-number">3.4.2</span> Zotero Connector</a></li>
-  <li><a href="#better-bibtex-for-zotero" id="toc-better-bibtex-for-zotero" class="nav-link" data-scroll-target="#better-bibtex-for-zotero"><span class="header-section-number">3.4.3</span> Better BibTeX for Zotero</a></li>
-  <li><a href="#zotero-7-beta" id="toc-zotero-7-beta" class="nav-link" data-scroll-target="#zotero-7-beta"><span class="header-section-number">3.4.4</span> Zotero 7 Beta</a></li>
+  <li><a href="#user-manual" id="toc-user-manual" class="nav-link" data-scroll-target="#user-manual"><span class="header-section-number">3.2.1</span> User Manual</a></li>
+  <li><a href="#git-tutorials" id="toc-git-tutorials" class="nav-link" data-scroll-target="#git-tutorials"><span class="header-section-number">3.2.2</span> Git Tutorials</a></li>
   </ul></li>
-  <li><a href="#chimerax" id="toc-chimerax" class="nav-link" data-scroll-target="#chimerax"><span class="header-section-number">3.5</span> ChimeraX</a></li>
-  <li><a href="#realvnc-viewer" id="toc-realvnc-viewer" class="nav-link" data-scroll-target="#realvnc-viewer"><span class="header-section-number">3.6</span> RealVNC Viewer</a>
+  <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git"><span class="header-section-number">3.3</span> Install Git</a>
   <ul class="collapse">
-  <li><a href="#realvnc-viewer-1" id="toc-realvnc-viewer-1" class="nav-link" data-scroll-target="#realvnc-viewer-1"><span class="header-section-number">3.6.1</span> RealVNC Viewer</a></li>
+  <li><a href="#macos-and-linux" id="toc-macos-and-linux" class="nav-link" data-scroll-target="#macos-and-linux"><span class="header-section-number">3.3.1</span> macOS and Linux</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows"><span class="header-section-number">3.3.2</span> Windows</a></li>
   </ul></li>
-  <li><a href="#optional-software" id="toc-optional-software" class="nav-link" data-scroll-target="#optional-software"><span class="header-section-number">3.7</span> Optional Software</a>
+  <li><a href="#get-a-github-account" id="toc-get-a-github-account" class="nav-link" data-scroll-target="#get-a-github-account"><span class="header-section-number">3.4</span> Get a GitHub Account</a>
   <ul class="collapse">
-  <li><a href="#anaconda" id="toc-anaconda" class="nav-link" data-scroll-target="#anaconda"><span class="header-section-number">3.7.1</span> Anaconda</a></li>
+  <li><a href="#linking-rstudio-to-github" id="toc-linking-rstudio-to-github" class="nav-link" data-scroll-target="#linking-rstudio-to-github"><span class="header-section-number">3.4.1</span> Linking RStudio to GitHub</a></li>
+  </ul></li>
+  <li><a href="#get-the-notebook" id="toc-get-the-notebook" class="nav-link" data-scroll-target="#get-the-notebook"><span class="header-section-number">3.5</span> Get the Notebook</a></li>
+  <li><a href="#keeping-the-forked-notebook-in-sync-with-the-original-project" id="toc-keeping-the-forked-notebook-in-sync-with-the-original-project" class="nav-link" data-scroll-target="#keeping-the-forked-notebook-in-sync-with-the-original-project"><span class="header-section-number">3.6</span> Keeping the forked Notebook in sync with the original project</a>
+  <ul class="collapse">
+  <li><a href="#define-the-upstream-repository" id="toc-define-the-upstream-repository" class="nav-link" data-scroll-target="#define-the-upstream-repository"><span class="header-section-number">3.6.1</span> Define the <code>upstream</code> repository</a></li>
+  <li><a href="#sync-the-upstream-repository-with-your-fork" id="toc-sync-the-upstream-repository-with-your-fork" class="nav-link" data-scroll-target="#sync-the-upstream-repository-with-your-fork"><span class="header-section-number">3.6.2</span> Sync the upstream repository with your fork</a></li>
+  <li><a href="#assessments" id="toc-assessments" class="nav-link" data-scroll-target="#assessments"><span class="header-section-number">3.6.3</span> Assessments</a></li>
+  </ul></li>
+  <li><a href="#vs-code" id="toc-vs-code" class="nav-link" data-scroll-target="#vs-code"><span class="header-section-number">3.7</span> VS Code</a></li>
+  <li><a href="#zotero" id="toc-zotero" class="nav-link" data-scroll-target="#zotero"><span class="header-section-number">3.8</span> Zotero</a>
+  <ul class="collapse">
+  <li><a href="#zotero-desktop" id="toc-zotero-desktop" class="nav-link" data-scroll-target="#zotero-desktop"><span class="header-section-number">3.8.1</span> Zotero Desktop</a></li>
+  <li><a href="#zotero-connector" id="toc-zotero-connector" class="nav-link" data-scroll-target="#zotero-connector"><span class="header-section-number">3.8.2</span> Zotero Connector</a></li>
+  <li><a href="#better-bibtex-for-zotero" id="toc-better-bibtex-for-zotero" class="nav-link" data-scroll-target="#better-bibtex-for-zotero"><span class="header-section-number">3.8.3</span> Better BibTeX for Zotero</a></li>
+  <li><a href="#zotero-7-beta" id="toc-zotero-7-beta" class="nav-link" data-scroll-target="#zotero-7-beta"><span class="header-section-number">3.8.4</span> Zotero 7 Beta</a></li>
+  </ul></li>
+  <li><a href="#chimerax" id="toc-chimerax" class="nav-link" data-scroll-target="#chimerax"><span class="header-section-number">3.9</span> ChimeraX</a></li>
+  <li><a href="#realvnc-viewer" id="toc-realvnc-viewer" class="nav-link" data-scroll-target="#realvnc-viewer"><span class="header-section-number">3.10</span> RealVNC Viewer</a>
+  <ul class="collapse">
+  <li><a href="#realvnc-viewer-1" id="toc-realvnc-viewer-1" class="nav-link" data-scroll-target="#realvnc-viewer-1"><span class="header-section-number">3.10.1</span> RealVNC Viewer</a></li>
+  </ul></li>
+  <li><a href="#optional-software" id="toc-optional-software" class="nav-link" data-scroll-target="#optional-software"><span class="header-section-number">3.11</span> Optional Software</a>
+  <ul class="collapse">
+  <li><a href="#anaconda" id="toc-anaconda" class="nav-link" data-scroll-target="#anaconda"><span class="header-section-number">3.11.1</span> Anaconda</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -226,7 +249,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024-10-03</p>
+      <p class="date">2024-10-24</p>
     </div>
   </div>
   
@@ -260,7 +283,16 @@ Note
 </section>
 <section id="git-and-a-github-account" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="git-and-a-github-account"><span class="header-section-number">3.2</span> Git and a GitHub Account</h2>
-<p><a href="https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md">Git and GitHub</a></p>
+<p><br> <img src="assets/in_case_of_fire2.png" class="img-fluid quarto-figure quarto-figure-left" style="width:50.0%" alt="in case of fire"></p>
+<p>What is version control?</p>
+<blockquote class="blockquote">
+<p>Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+</blockquote>
+<p>You can get all you need to know about git from the <a href="https://git-scm.com/book/en/v2">Pro Git Book</a>. This is a great introduction to version control and git.</p>
+<section id="user-manual" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="user-manual"><span class="header-section-number">3.2.1</span> User Manual</h3>
+<p><a href="https://happygitwithr.com/">Happy Git and GitHub for the useR</a></p>
+<p>This is an excellent resource for all things Git, GitHub, and RStudio. Use the left navigation to Quickly find relevant topics for how to integrate Git and GitHub with RStudio.</p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -271,39 +303,338 @@ Tip
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>We will use <code>git</code> within RStudio. On macOS, RStudio with echo the mac terminal. I am using <a href="https://ohmyz.sh/">Oh My Zsh</a> as my <code>zsh</code> framework, and <a href="https://iterm2.com/">iTerm2</a> as my terminal emulator rather than the macOS default terminal application. I also have the latest <code>git</code> version installed through <a href="https://brew.sh/">Homebrew</a>.</p>
+<p>We will use <code>git</code> within RStudio. On macOS, RStudio will echo the mac terminal. I am using <a href="https://ohmyz.sh/">Oh My Zsh</a> as my <code>zsh</code> framework, and <a href="https://wezfurlong.org/wezterm/index.html">Wezterm</a> as my terminal emulator rather than the macOS default terminal application. I also have the latest <code>git</code> version installed through <a href="https://brew.sh/">Homebrew</a>. I installed the <a href="https://starship.rs/">Starship</a> prompt (using Homebrew) to customize my terminal environment.</p>
 <p>This means that I need to adjust the settings in RStudio to use my <code>zsh</code> environment. Go to <em>Tools</em> → <em>Global Options</em> → <em>Terminal</em> and choose <code>Zsh</code> from the drop-down menu for the <em>New terminals open with</em> option.</p>
 </div>
 </div>
 </section>
-<section id="vs-code" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="vs-code"><span class="header-section-number">3.3</span> VS Code</h2>
+<section id="git-tutorials" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="git-tutorials"><span class="header-section-number">3.2.2</span> Git Tutorials</h3>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Here are the learning objectives for the git section. After taking the tutorials, you will be able to:</p>
+<ol type="1">
+<li>Create a GitHub account.</li>
+<li>Install Git on your local computer.</li>
+<li>Create <code>ssh</code> keys to connect your local computer to GitHub.</li>
+<li>Create a project and push it to GitHub.</li>
+<li>Fork a project from GitHub.</li>
+</ol>
+</div>
+</div>
+<section id="videos" class="level4" data-number="3.2.2.1">
+<h4 data-number="3.2.2.1" class="anchored" data-anchor-id="videos"><span class="header-section-number">3.2.2.1</span> Videos</h4>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=RGOj5yH7evk">Git and GitHub for Beginners - Crash Course</a></li>
+<li><a href="https://www.youtube.com/watch?v=CvUiKWv2-C0">Git Tutorial for Absolute Beginners</a></li>
+<li><a href="https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Key-Setup-Config-Ubuntu-Linux">How to setup SSH in GitHub by example</a></li>
+<li><a href="https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/GitHub-SSH-Windows-Example">How to SSH into GitHub on Windows example</a></li>
+<li><a href="https://www.freecodecamp.org/news/how-to-fork-a-github-repository/">How to Fork a GitHub Repository</a></li>
+</ul>
+</section>
+<section id="text-based" class="level4" data-number="3.2.2.2">
+<h4 data-number="3.2.2.2" class="anchored" data-anchor-id="text-based"><span class="header-section-number">3.2.2.2</span> Text-based</h4>
+<ul>
+<li><a href="https://www.freecodecamp.org/news/learn-the-basics-of-git-in-under-10-minutes-da548267cc91/">Learn the Basics of Git in Under 10 Minutes</a></li>
+<li><a href="https://www.freecodecamp.org/news/how-to-fork-a-github-repository/">How to Fork a GitHub Repository</a></li>
+<li><a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">Fork a repository</a></li>
+</ul>
+</section>
+<section id="more-guides-to-git" class="level4" data-number="3.2.2.3">
+<h4 data-number="3.2.2.3" class="anchored" data-anchor-id="more-guides-to-git"><span class="header-section-number">3.2.2.3</span> More Guides to Git</h4>
+<ul>
+<li><a href="https://www.atlassian.com/git/tutorials/what-is-version-control">Introduction to Version Control</a> This is hosted by Atlassian, a company that uses their own cloud-based git repository called BitBucket. We will be using GitHub for all our work, so if you try tutorials on this site, remember to use <code>github</code> instead of <code>bitbucket</code> when connecting to the remote repository. Focus on the <em>Beginner</em> and <em>Getting Started</em> sections.</li>
+<li><a href="https://github.com/carpentries-incubator/reproducible-publications-quarto/blob/main/setup.md">Git and GitHub</a></li>
+<li><a href="https://think-like-a-git.net/sections/about-this-site.html">An “adavanced beginner” guide to git</a></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="install-git" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="install-git"><span class="header-section-number">3.3</span> Install Git</h2>
+<section id="macos-and-linux" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="macos-and-linux"><span class="header-section-number">3.3.1</span> macOS and Linux</h3>
+<p>Git is pre-installed on macOS and Linux computers, but users may want to update to the latest version.</p>
+<p>On Macs, installation of Git is easiest using a package manager like <a href="https://brew.sh/">Homebrew</a>. If you do not have Homebrew installed, follow the instructions on the <a href="https://brew.sh/">Homebrew homepage</a>. Then install Git with:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Check the installation by opening the terminal tab in RStudio (or use whatever terminal you already have open) and entering:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> <span class="at">--version</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="set-the-git-path-in-rstudio" class="level4" data-number="3.3.1.1">
+<h4 data-number="3.3.1.1" class="anchored" data-anchor-id="set-the-git-path-in-rstudio"><span class="header-section-number">3.3.1.1</span> Set the git path in RStudio</h4>
+<p>To get RStudio to use the updated Git, you need to tell RStudio where to find the newly installed Git. First, get the path to the Git executable by typing:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">which</span> git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/git-version.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="RStudio Terminal window"><img src="../assets/git-version.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:60.0%" alt="RStudio Terminal window"></a></p>
+<figcaption>RStudio Terminal window</figcaption>
+</figure>
+</div>
+<p>Next, in RStudio, go to <em>Tools</em> → <em>Global Options</em>. You will get the menu in <em>(a)</em>:</p>
+<div id="fig-git" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row quarto-layout-valign-bottom">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-git" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-options" class="lightbox quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-options-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../assets/git-path.png" class="lightbox" data-gallery="fig-git" data-glightbox="description: .lightbox-desc-2"><img src="../assets/git-path.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-options-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Global Options
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-git" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-path" class="lightbox quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="../assets/git-path-browse.png" class="lightbox" data-gallery="fig-git" data-glightbox="description: .lightbox-desc-3"><img src="../assets/git-path-browse.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) git path
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-git-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: Setting the Git path in RStudio
+</figcaption>
+</figure>
+</div>
+<ol type="1">
+<li>Choose <em>Git/SVN</em>.</li>
+<li>Browse to <code>git</code> using the path obtained from the <code>which git</code> command. See <em>(b)</em>, above.</li>
+<li>Click <em>Apply</em>.</li>
+<li>Click <em>OK</em>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <code>git</code> executable in <code>/opt/homebrew/bin/git</code> is an alias that points to <code>/opt/homebrew/Cellar/git/2.45.0/bin/git</code>. When you browse to <code>/opt/homebrew/bin/git</code>, it gets resolved to the correct path.</p>
+</div>
+</div>
+<p>Now RStudio will use the updated Git.</p>
+</section>
+</section>
+<section id="windows" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="windows"><span class="header-section-number">3.3.2</span> Windows</h3>
+<p>Windows users should go to the <a href="https://git-scm.com/">Git website</a> to get the latest Windows build.</p>
+</section>
+</section>
+<section id="get-a-github-account" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="get-a-github-account"><span class="header-section-number">3.4</span> Get a GitHub Account</h2>
+<section id="linking-rstudio-to-github" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="linking-rstudio-to-github"><span class="header-section-number">3.4.1</span> Linking RStudio to GitHub</h3>
+<section id="ssh-keys" class="level4" data-number="3.4.1.1">
+<h4 data-number="3.4.1.1" class="anchored" data-anchor-id="ssh-keys"><span class="header-section-number">3.4.1.1</span> ssh keys</h4>
+<p>See <a href="https://happygitwithr.com/ssh-keys">Chapter 10 Set up keys for SSH</a>. I already have a key pair that I have used for GitHub.</p>
+<ol type="1">
+<li><p>Add key to <code>ssh-agent</code>. Use the following command in the terminal:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="st">"</span><span class="va">$(</span><span class="fu">ssh-agent</span> <span class="at">-s</span><span class="va">)</span><span class="st">"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should see a response like the following, except the <code>pid</code> number will likely be different.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Agent</span> pid 15360</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>If you use MacOS &gt; 10.12.1, create a file <code>~/.ssh/config</code> with the following contents:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Host</span> <span class="pp">*</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">AddKeysToAgent</span> yes</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">UseKeychain</span> yes</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="ex">IdentityFile</span> ~/.ssh/id_ed25519</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Add your key to the <code>ssh-agent</code>.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ssh-add</span> <span class="at">--apple-load-keychain</span> ~/.ssh/id_ed25519</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You should now be able to push to GitHub!</p></li>
+</ol>
+<p>If you are asked for a username and password after setting ssh keys, try the following:</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">origin</span>  https://github.com/dgoppenheimer/notebook-template.git <span class="er">(</span><span class="ex">fetch</span><span class="kw">)</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="ex">origin</span>  https://github.com/dgoppenheimer/notebook-template.git <span class="er">(</span><span class="ex">push</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>If you get the <code>https://...</code> response from git, then you need to change how you access the remote repository.</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote set-url origin git@github.com:dgoppenheimer/notebook-template.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Now, you should be able to push without needed to enter a username/password.</p>
+</section>
+</section>
+</section>
+<section id="get-the-notebook" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="get-the-notebook"><span class="header-section-number">3.5</span> Get the Notebook</h2>
+<ol type="1">
+<li><p>Ask to be a collaborator on the <code>notebook-template</code> repository.</p></li>
+<li><p>Click the <em>notifications</em> icon on GitHub.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-notification1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../assets/github-notification1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>On the notifications page, click the <em>invitation to join …</em> row.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-colab.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../assets/github-colab.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Click the <em>Accept</em> button to accept the invitation.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-accept.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../assets/github-accept.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Click the <em>Fork</em> button to create your own fork of this project.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-fork.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../assets/github-fork.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Give the project a new name. Use a name that describes the project (Hif1alpha, p53TAD, etc.). Here I chose <code>test-fork-notebook</code> because I am using this fork for testing purposes. Then click <em>Create fork</em>.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-fork-name.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="../assets/github-fork-name.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+<p>Now you have your own copy of the Notebook template.</p></li>
+<li><p>Clone the forked repository. On your local computer, Create a new project in RStudio. The <em>New Project Wizard</em> will open. Choose the <em>Version Control</em> option.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/rstudio-new-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="../assets/rstudio-new-project.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Choose the <em>Git</em> option.</p>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/rstudio-git-project.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="../assets/rstudio-git-project.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Go to your repository page on GitHub in your browser.</p>
+<ol type="1">
+<li>Click the <em>Code</em> button.</li>
+<li>Choose <em>HTTPS</em>.</li>
+<li>Copy the URL to your clipboard.</li>
+</ol>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/github-project-url.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11"><img src="../assets/github-project-url.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div></li>
+<li><p>Go back to the <em>RStudio New Project Wizard</em> window.</p>
+<ol type="1">
+<li>Paste in the URL that you copied from your GitHub project page.</li>
+<li>Choose a name for the directory for the project. I usually make the directory name the same as the GitHub project name, in this case, <code>test-fork-notebook</code>.</li>
+<li>Click <em>Create Project</em>. The project will be cloned into the directory that you specified.</li>
+</ol>
+<div class="quarto-figure quarto-figure-left">
+<figure class="figure">
+<p><a href="../assets/rstudio-git-project2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="../assets/rstudio-git-project2.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:75.0%"></a></p>
+</figure>
+</div>
+<p>You now have your new project in your local directory linked to the repository in GitHub. Make changes/additions, do <code>git add .</code>, <code>git commit -m "added new files"</code>, and <code>git push</code>, to push the changes to GitHub.</p></li>
+</ol>
+</section>
+<section id="keeping-the-forked-notebook-in-sync-with-the-original-project" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="keeping-the-forked-notebook-in-sync-with-the-original-project"><span class="header-section-number">3.6</span> Keeping the forked Notebook in sync with the original project</h2>
+<p>Hopefully you will not need to do this often, but the steps below will import any changes to the original project while keeping all the changes you have made to the forked project.</p>
+<section id="define-the-upstream-repository" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="define-the-upstream-repository"><span class="header-section-number">3.6.1</span> Define the <code>upstream</code> repository</h3>
+<p>From <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork">GitHub Docs Configuring a remote repository for a fork</a>.</p>
+<ol type="1">
+<li><p>Open Terminal.</p></li>
+<li><p>List the current configured remote repository for your fork.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git remote <span class="at">-v</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> origin  <span class="ex">https://github.com/YOUR-USERNAME/YOUR-FORK.git</span> <span class="er">(</span><span class="ex">fetch</span><span class="kw">)</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> origin  <span class="ex">https://github.com/YOUR-USERNAME/YOUR-FORK.git</span> <span class="er">(</span><span class="ex">push</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Specify a new remote <code>upstream</code> repository that will be synced with the fork. This is the original repository that we created our fork from.</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add upstream https://github.com/dgoppenheimer/notebook-template.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Verify the new upstream repository you’ve specified for your fork.</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote <span class="at">-v</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">origin</span>  https://github.com/dgo-testing/test-fork-notebook.git <span class="er">(</span><span class="ex">fetch</span><span class="kw">)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">origin</span>  https://github.com/dgo-testing/test-fork-notebook.git <span class="er">(</span><span class="ex">push</span><span class="kw">)</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">upstream</span> https://github.com/dgoppenheimer/notebook-template.git <span class="er">(</span><span class="ex">fetch</span><span class="kw">)</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="ex">upstream</span> https://github.com/dgoppenheimer/notebook-template.git <span class="er">(</span><span class="ex">push</span><span class="kw">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="sync-the-upstream-repository-with-your-fork" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="sync-the-upstream-repository-with-your-fork"><span class="header-section-number">3.6.2</span> Sync the upstream repository with your fork</h3>
+<ol type="1">
+<li><p>Fetch the branches and their respective commits from the upstream repository. Commits to <code>BRANCH-NAME</code> will be stored in the local branch <code>upstream/BRANCH-NAME</code>.</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git fetch upstream</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> From <span class="ex">https://github.com/dgoppenheimer/notebook-template</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> <span class="ex">*</span> [new branch]      main       <span class="at">-</span><span class="op">&gt;</span> upstream/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>I made some changes to <code>notebook-template</code> and committed, and pushed to GitHub.</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git fetch upstream</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="ex">remote:</span> Enumerating objects: 18, done.</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> remote: <span class="ex">Counting</span> objects: 100% <span class="er">(</span><span class="ex">18/18</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> remote: <span class="ex">Compressing</span> objects: 100% <span class="er">(</span><span class="ex">13/13</span><span class="kw">)</span><span class="ex">,</span> done.</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> remote: <span class="ex">Total</span> 14 <span class="er">(</span><span class="ex">delta</span> 1<span class="kw">)</span><span class="ex">,</span> reused 14 <span class="er">(</span><span class="ex">delta</span> 1<span class="kw">)</span><span class="ex">,</span> pack-reused 0</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> Unpacking <span class="ex">objects:</span> 100% <span class="er">(</span><span class="ex">14/14</span><span class="kw">)</span><span class="ex">,</span> 1.71 MiB <span class="kw">|</span> <span class="ex">4.75</span> MiB/s, done.</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> From <span class="ex">https://github.com/dgoppenheimer/notebook-template</span></span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span>    dae15a8..c1a638a  <span class="ex">main</span>       <span class="at">-</span><span class="op">&gt;</span> upstream/main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Check out your fork’s local default branch - in this case, we use <code>main.</code></p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git checkout main</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="op">&gt;</span> Switched <span class="ex">to</span> branch <span class="st">'main'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Merge the changes from the upstream default branch - in this case, <code>upstream/main</code> - into your local default branch. This brings your fork’s default branch into sync with the upstream repository, without losing your local changes.</p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge upstream/main <span class="at">-m</span> <span class="st">"updating fork from upstream"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ol>
+</section>
+<section id="assessments" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="assessments"><span class="header-section-number">3.6.3</span> Assessments</h3>
+<p>Let’s see what you have learned. You should have accomplished all of the tasks below if you were successful with the tasks listed above.</p>
+<ol type="1">
+<li>Fork the <code>notebook-template</code> project from GitHub.</li>
+<li>Rename the project <code>&lt;your last name&gt;-notebook</code> (without the <code>&lt; &gt;</code> symbols).</li>
+<li>Push your new project (your notebook) back to GitHub.</li>
+<li>Create a new quarto document titled: “My Notebook”. You can use this document to take notes, or whatever.</li>
+</ol>
+<ul>
+<li>Update the <code>_quarto.yml</code> file so that your document can be found in the table of contents.</li>
+</ul>
+<ol start="5" type="1">
+<li>Add and commit the project to your local repository.</li>
+<li>Push the changes to your remote repository.</li>
+<li>Invite me to clone the your notebook. Use <code>oppenhe@ufl.edu</code>.</li>
+</ol>
+</section>
+</section>
+<section id="vs-code" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="vs-code"><span class="header-section-number">3.7</span> VS Code</h2>
 <p>Download and launch the installer and follow the instructions.</p>
 <p><a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
 </section>
-<section id="zotero" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="zotero"><span class="header-section-number">3.4</span> Zotero</h2>
-<section id="zotero-desktop" class="level3" data-number="3.4.1">
-<h3 data-number="3.4.1" class="anchored" data-anchor-id="zotero-desktop"><span class="header-section-number">3.4.1</span> Zotero Desktop</h3>
+<section id="zotero" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="zotero"><span class="header-section-number">3.8</span> Zotero</h2>
+<section id="zotero-desktop" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="zotero-desktop"><span class="header-section-number">3.8.1</span> Zotero Desktop</h3>
 <p>Zotero is available for macOS, Windows, Linux, and iOS.</p>
 <p>Download Zotero from the <a href="https://www.zotero.org/">Zotero website</a>.</p>
 <p>Installation is straightforward, but <a href="Installation Instructions">installation instructions</a> are available if needed.</p>
 </section>
-<section id="zotero-connector" class="level3" data-number="3.4.2">
-<h3 data-number="3.4.2" class="anchored" data-anchor-id="zotero-connector"><span class="header-section-number">3.4.2</span> Zotero Connector</h3>
+<section id="zotero-connector" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="zotero-connector"><span class="header-section-number">3.8.2</span> Zotero Connector</h3>
 <p>Also install the <a href="https://chromewebstore.google.com/detail/zotero-connector/ekhagklcjbdpajgpjgmbionohlpdbjgc?pli=1">Zotero Connector</a> for the Chrome web browser for easy importing of items into your Zotero library.</p>
 </section>
-<section id="better-bibtex-for-zotero" class="level3" data-number="3.4.3">
-<h3 data-number="3.4.3" class="anchored" data-anchor-id="better-bibtex-for-zotero"><span class="header-section-number">3.4.3</span> Better BibTeX for Zotero</h3>
+<section id="better-bibtex-for-zotero" class="level3" data-number="3.8.3">
+<h3 data-number="3.8.3" class="anchored" data-anchor-id="better-bibtex-for-zotero"><span class="header-section-number">3.8.3</span> Better BibTeX for Zotero</h3>
 <p>To easily cite references in your Quarto documents in RStudio, install the <a href="https://retorque.re/zotero-better-bibtex/">Better BibTeX plugin</a>.</p>
 </section>
-<section id="zotero-7-beta" class="level3" data-number="3.4.4">
-<h3 data-number="3.4.4" class="anchored" data-anchor-id="zotero-7-beta"><span class="header-section-number">3.4.4</span> Zotero 7 Beta</h3>
+<section id="zotero-7-beta" class="level3" data-number="3.8.4">
+<h3 data-number="3.8.4" class="anchored" data-anchor-id="zotero-7-beta"><span class="header-section-number">3.8.4</span> Zotero 7 Beta</h3>
 <p>There is a <a href="https://www.zotero.org/support/beta_builds">beta release for Zotero 7</a>. This has (I believe) a nicer interface, and new features. See the <a href="https://forums.zotero.org/discussion/105094/announcing-the-zotero-7-beta">Zotero 7 beta announcement</a> for more information.</p>
 </section>
 </section>
-<section id="chimerax" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="chimerax"><span class="header-section-number">3.5</span> ChimeraX</h2>
+<section id="chimerax" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="chimerax"><span class="header-section-number">3.9</span> ChimeraX</h2>
 <ol type="1">
 <li>Go to the <a href="https://www.cgl.ucsf.edu/chimerax/download.html">ChimeraX download page</a>.</li>
 <li>Download the installer appropriate for your operating system.</li>
@@ -313,14 +644,14 @@ Tip
 <li>Drag the ChimeraX application to your Applications folder.</li>
 </ol>
 </section>
-<section id="realvnc-viewer" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="realvnc-viewer"><span class="header-section-number">3.6</span> RealVNC Viewer</h2>
-<section id="realvnc-viewer-1" class="level3" data-number="3.6.1">
-<h3 data-number="3.6.1" class="anchored" data-anchor-id="realvnc-viewer-1"><span class="header-section-number">3.6.1</span> RealVNC Viewer</h3>
+<section id="realvnc-viewer" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="realvnc-viewer"><span class="header-section-number">3.10</span> RealVNC Viewer</h2>
+<section id="realvnc-viewer-1" class="level3" data-number="3.10.1">
+<h3 data-number="3.10.1" class="anchored" data-anchor-id="realvnc-viewer-1"><span class="header-section-number">3.10.1</span> RealVNC Viewer</h3>
 <p>To connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses <a href="https://www.realvnc.com/en/connect/download/vnc/">RealVNC Server</a> to which we can connect using the client software, <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC Viewer</a>.</p>
 <p><a href="https://www.realvnc.com/en/connect/download/viewer/">Download</a> and install the software following the onscreen instructions (for macOS, drag the app to the <em>Applications</em> folder).</p>
-<section id="troubleshooting" class="level4" data-number="3.6.1.1">
-<h4 data-number="3.6.1.1" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">3.6.1.1</span> Troubleshooting</h4>
+<section id="troubleshooting" class="level4" data-number="3.10.1.1">
+<h4 data-number="3.10.1.1" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">3.10.1.1</span> Troubleshooting</h4>
 <dl>
 <dt>copy and paste to NMRbox stops working</dt>
 <dd>
@@ -330,44 +661,44 @@ Tip
 </section>
 </section>
 </section>
-<section id="optional-software" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="optional-software"><span class="header-section-number">3.7</span> Optional Software</h2>
-<section id="anaconda" class="level3" data-number="3.7.1">
-<h3 data-number="3.7.1" class="anchored" data-anchor-id="anaconda"><span class="header-section-number">3.7.1</span> Anaconda</h3>
-<section id="update-homebrew" class="level4" data-number="3.7.1.1">
-<h4 data-number="3.7.1.1" class="anchored" data-anchor-id="update-homebrew"><span class="header-section-number">3.7.1.1</span> Update Homebrew</h4>
+<section id="optional-software" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="optional-software"><span class="header-section-number">3.11</span> Optional Software</h2>
+<section id="anaconda" class="level3" data-number="3.11.1">
+<h3 data-number="3.11.1" class="anchored" data-anchor-id="anaconda"><span class="header-section-number">3.11.1</span> Anaconda</h3>
+<section id="update-homebrew" class="level4" data-number="3.11.1.1">
+<h4 data-number="3.11.1.1" class="anchored" data-anchor-id="update-homebrew"><span class="header-section-number">3.11.1.1</span> Update Homebrew</h4>
 <p>In terminal:</p>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="annotated-cell-1"><pre class="sourceCode zsh code-annotation-code code-with-copy code-annotated"><code class="sourceCode zsh"><span id="annotated-cell-1-1"><a href="#annotated-cell-1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-1-2" class="code-annotation-target"><a href="#annotated-cell-1-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-1" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-1-3" class="code-annotation-target"><a href="#annotated-cell-1-3" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-6"><pre class="sourceCode zsh code-annotation-code code-with-copy code-annotated"><code class="sourceCode zsh"><span id="annotated-cell-6-1"><a href="#annotated-cell-6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> ~</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-6-2" class="code-annotation-target"><a href="#annotated-cell-6-2" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> update</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-6" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-6-3" class="code-annotation-target"><a href="#annotated-cell-6-3" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> upgrade</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-1" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="2" data-code-annotation="1">Update the Homebrew package manager.</span>
+<span data-code-cell="annotated-cell-6" data-code-lines="2" data-code-annotation="1">Update the Homebrew package manager.</span>
 </dd>
-<dt data-target-cell="annotated-cell-1" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-6" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-1" data-code-lines="3" data-code-annotation="2">Upgrade the packages in Homebrew. <em>Note</em>: This can take a long time (hours) depending on how many packages need upgrading.</span>
+<span data-code-cell="annotated-cell-6" data-code-lines="3" data-code-annotation="2">Upgrade the packages in Homebrew. <em>Note</em>: This can take a long time (hours) depending on how many packages need upgrading.</span>
 </dd>
 </dl>
 </div>
 </div>
 </section>
-<section id="install-anaconda" class="level4" data-number="3.7.1.2">
-<h4 data-number="3.7.1.2" class="anchored" data-anchor-id="install-anaconda"><span class="header-section-number">3.7.1.2</span> Install Anaconda</h4>
+<section id="install-anaconda" class="level4" data-number="3.11.1.2">
+<h4 data-number="3.11.1.2" class="anchored" data-anchor-id="install-anaconda"><span class="header-section-number">3.11.1.2</span> Install Anaconda</h4>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> anaconda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install <span class="at">--cask</span> anaconda</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>After installation is complete, add the path to <code>.zshrc</code> and restart shell.</p>
@@ -376,30 +707,30 @@ Tip
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'export PATH="/usr/local/Homebrew/anaconda3/bin:$PATH"'</span> <span class="op">&gt;&gt;</span> ~/.zshrc</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="st">'export PATH="/usr/local/Homebrew/anaconda3/bin:$PATH"'</span> <span class="op">&gt;&gt;</span> ~/.zshrc</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> ~/.zshrc</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
-<section id="activate-anaconda" class="level4" data-number="3.7.1.3">
-<h4 data-number="3.7.1.3" class="anchored" data-anchor-id="activate-anaconda"><span class="header-section-number">3.7.1.3</span> Activate Anaconda</h4>
+<section id="activate-anaconda" class="level4" data-number="3.11.1.3">
+<h4 data-number="3.11.1.3" class="anchored" data-anchor-id="activate-anaconda"><span class="header-section-number">3.11.1.3</span> Activate Anaconda</h4>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="annotated-cell-4"><pre class="sourceCode zsh code-annotation-code code-with-copy code-annotated"><code class="sourceCode zsh"><a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-4-1" class="code-annotation-target"><a href="#annotated-cell-4-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/Homebrew/anaconda3/bin/activate</span>
-<a class="code-annotation-anchor" data-target-cell="annotated-cell-4" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-4-2" class="code-annotation-target"><a href="#annotated-cell-4-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> init zsh</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="annotated-cell-9"><pre class="sourceCode zsh code-annotation-code code-with-copy code-annotated"><code class="sourceCode zsh"><a class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="1" onclick="event.preventDefault();">1</a><span id="annotated-cell-9-1" class="code-annotation-target"><a href="#annotated-cell-9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">source</span> /usr/local/Homebrew/anaconda3/bin/activate</span>
+<a class="code-annotation-anchor" data-target-cell="annotated-cell-9" data-target-annotation="2" onclick="event.preventDefault();">2</a><span id="annotated-cell-9-2" class="code-annotation-target"><a href="#annotated-cell-9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> init zsh</span><div class="code-annotation-gutter-bg"></div><div class="code-annotation-gutter"></div></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell-annotation">
 <dl class="code-annotation-container-grid">
-<dt data-target-cell="annotated-cell-4" data-target-annotation="1">1</dt>
+<dt data-target-cell="annotated-cell-9" data-target-annotation="1">1</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="1" data-code-annotation="1">Use the path to the Homebrew-installed Anaconda.</span>
+<span data-code-cell="annotated-cell-9" data-code-lines="1" data-code-annotation="1">Use the path to the Homebrew-installed Anaconda.</span>
 </dd>
-<dt data-target-cell="annotated-cell-4" data-target-annotation="2">2</dt>
+<dt data-target-cell="annotated-cell-9" data-target-annotation="2">2</dt>
 <dd>
-<span data-code-cell="annotated-cell-4" data-code-lines="2" data-code-annotation="2">Initialize your preferred shell to work with <code>conda.</code></span>
+<span data-code-cell="annotated-cell-9" data-code-lines="2" data-code-annotation="2">Initialize your preferred shell to work with <code>conda.</code></span>
 </dd>
 </dl>
 </div>
@@ -410,20 +741,20 @@ Tip
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> 25.4.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> <span class="at">--version</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> 25.4.0</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>✅ Success!</p>
 </section>
-<section id="create-and-activate-a-conda-environment-for-the-plumed-masterclass-tutuorial" class="level4" data-number="3.7.1.4">
-<h4 data-number="3.7.1.4" class="anchored" data-anchor-id="create-and-activate-a-conda-environment-for-the-plumed-masterclass-tutuorial"><span class="header-section-number">3.7.1.4</span> Create and activate a <code>conda</code> Environment for the Plumed Masterclass Tutuorial</h4>
+<section id="create-and-activate-a-conda-environment-for-the-plumed-masterclass-tutuorial" class="level4" data-number="3.11.1.4">
+<h4 data-number="3.11.1.4" class="anchored" data-anchor-id="create-and-activate-a-conda-environment-for-the-plumed-masterclass-tutuorial"><span class="header-section-number">3.11.1.4</span> Create and activate a <code>conda</code> Environment for the Plumed Masterclass Tutuorial</h4>
 <div class="cell">
 <div class="code-with-filename">
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> plumed-masterclass-2022</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> create <span class="at">--name</span> plumed-masterclass-2022</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <p>Activate the environment with:</p>
@@ -432,7 +763,7 @@ Tip
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate plumed-masterclass-2022</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> activate plumed-masterclass-2022</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -451,15 +782,26 @@ Note
 <div class="code-with-filename-file">
 <pre><strong>Terminal</strong></pre>
 </div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="ex">conda</span> deactivate</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </div>
 </div>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">RStudio Terminal window</span>
+<span class="glightbox-desc lightbox-desc-2">Figure&nbsp;3.1&nbsp;(a): Global Options</span>
+<span class="glightbox-desc lightbox-desc-3">Figure&nbsp;3.1&nbsp;(b): git path</span>
+</div>
 </section>
 </section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>from the Atlassian webpage on <a href="https://www.atlassian.com/git/tutorials/what-is-version-control">What is version control?</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
 </section>
 
 </main> <!-- /main -->
@@ -863,6 +1205,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 
