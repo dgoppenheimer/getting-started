@@ -59,7 +59,18 @@ Here are the learning objectives for the git section. After taking the tutorials
 
 - [An "adavanced beginner" guide to git](https://think-like-a-git.net/sections/about-this-site.html)
 
+### Assessments
 
+Let's see what you have learned.
+
+1. Fork the `notebook-template` project from GitHub.
+2. Rename the project `<your last name>-notebook` (without the `< >` symbols).
+3. Push your new project (your notebook) back to GitHub.
+4. Create a new quarto document titled: "My Notebook". You can use this document to take notes, or whatever.
+  - Update the `_quarto.yml` file so that your document can be found in the table of contents. 
+5. Add and commit the project to your local repository.
+6. Push the changes to your remote repository.
+5. Invite me to clone the your notebook. Use `oppenhe@ufl.edu`.
 
 ## VS Code
 
