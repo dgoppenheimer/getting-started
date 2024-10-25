@@ -132,33 +132,33 @@ Now, you should be able to push without needed to enter a username/password.
 
 2.  Click the *notifications* icon on GitHub.
 
-    ![](../assets/github-notification1.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-notification1.png){.lightbox fig-align="left" width="75%"}
 
 3.  On the notifications page, click the *invitation to join ...* row.
 
-    ![](../assets/github-colab.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-colab.png){.lightbox fig-align="left" width="75%"}
 
 4.  Click the *Accept* button to accept the invitation.
 
-    ![](../assets/github-accept.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-accept.png){.lightbox fig-align="left" width="75%"}
 
 5.  Click the *Fork* button to create your own fork of this project.
 
-    ![](../assets/github-fork.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-fork.png){.lightbox fig-align="left" width="75%"}
 
 6.  Give the project a new name. Use a name that describes the project (Hif1alpha, p53TAD, etc.). Here I chose `test-fork-notebook` because I am using this fork for testing purposes. Then click *Create fork*.
 
-    ![](../assets/github-fork-name.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-fork-name.png){.lightbox fig-align="left" width="75%"}
 
     Now you have your own copy of the Notebook template.
 
 7.  Clone the forked repository. On your local computer, Create a new project in RStudio. The *New Project Wizard* will open. Choose the *Version Control* option.
 
-    ![](../assets/rstudio-new-project.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/rstudio-new-project.png){.lightbox fig-align="left" width="75%"}
 
 8.  Choose the *Git* option.
 
-    ![](../assets/rstudio-git-project.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/rstudio-git-project.png){.lightbox fig-align="left" width="75%"}
 
 9.  Go to your repository page on GitHub in your browser.
 
@@ -166,7 +166,7 @@ Now, you should be able to push without needed to enter a username/password.
     2.  Choose *HTTPS*.
     3.  Copy the URL to your clipboard.
 
-    ![](../assets/github-project-url.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/github-project-url.png){.lightbox fig-align="left" width="75%"}
 
 10. Go back to the *RStudio New Project Wizard* window.
 
@@ -174,7 +174,7 @@ Now, you should be able to push without needed to enter a username/password.
     2.  Choose a name for the directory for the project. I usually make the directory name the same as the GitHub project name, in this case, `test-fork-notebook`.
     3.  Click *Create Project*. The project will be cloned into the directory that you specified.
 
-    ![](../assets/rstudio-git-project2.png){.lightbox fig-align="left" width="75%"}
+    ![](./assets/rstudio-git-project2.png){.lightbox fig-align="left" width="75%"}
 
     You now have your new project in your local directory linked to the repository in GitHub. Make changes/additions, do `git add .`, `git commit -m "added new files"`, and `git push`, to push the changes to GitHub.
 
