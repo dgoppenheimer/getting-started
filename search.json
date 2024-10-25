@@ -124,7 +124,7 @@
     "href": "software-needed.html#realvnc-viewer",
     "title": "2  Software Needed",
     "section": "2.10 RealVNC Viewer",
-    "text": "2.10 RealVNC Viewer\n\n2.10.1 RealVNC Viewer\nTo connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, RealVNC Viewer.\nDownload and install the software following the onscreen instructions (for macOS, drag the app to the Applications folder).\n\n2.10.1.1 Troubleshooting\n\ncopy and paste to NMRbox stops working\n\nIn Terminal on NMRbox, type the following: vncconfig & and hit return. See How to fix VNC Viewer copy-paste not working for additional help.",
+    "text": "2.10 RealVNC Viewer\nTo connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, RealVNC Viewer.\nDownload and install the software following the onscreen instructions (for macOS, drag the app to the Applications folder).\nTo connect to NMRBox using the RealVNC Viewer software, follow the instructions at Use of NMRbox virtual machines (VMs).\n\n2.10.0.1 Troubleshooting\n\ncopy and paste to NMRbox stops working\n\nIn Terminal on NMRbox, type the following: vncconfig & and hit return. Leave the config settings window open. See How to fix VNC Viewer copy-paste not working for additional help.\n\n\nIf copy and paste still don’t work, check terminal number n (use tty) and run vncconfig -display :n &.\n\n\nThese do not appear to work on NMRbox. I get the error: vncconfig not found.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
@@ -150,13 +150,23 @@
     ]
   },
   {
+    "objectID": "gromacs-tutorial.html",
+    "href": "gromacs-tutorial.html",
+    "title": "3  GROMACS Tutorial",
+    "section": "",
+    "text": "An exceptionally good tutorial of an intrinsically disordered protein has been developed by the Bonvin Lab.\nThe tutorial was developed as part of the Structural Bioinformatics & Modelling course maintained by Utrecht University.\nClick the link below to go to the tutorial.\nMolecular Dynamics Simulation of the p53 N-terminal peptide",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GROMACS Tutorial</span>"
+    ]
+  },
+  {
     "objectID": "scratch-pad.html",
     "href": "scratch-pad.html",
-    "title": "3  Scratch Pad",
+    "title": "4  Scratch Pad",
     "section": "",
     "text": "Just a place for quick notes",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Scratch Pad</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scratch Pad</span>"
     ]
   }
 ]

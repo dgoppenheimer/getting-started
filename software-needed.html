@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./scratch-pad.html" rel="next">
+<link href="./gromacs-tutorial.html" rel="next">
 <link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -165,8 +165,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./gromacs-tutorial.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GROMACS Tutorial</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./scratch-pad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Scratch Pad</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Scratch Pad</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -216,10 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#zotero-7-beta" id="toc-zotero-7-beta" class="nav-link" data-scroll-target="#zotero-7-beta"><span class="header-section-number">2.8.4</span> Zotero 7 Beta</a></li>
   </ul></li>
   <li><a href="#chimerax" id="toc-chimerax" class="nav-link" data-scroll-target="#chimerax"><span class="header-section-number">2.9</span> ChimeraX</a></li>
-  <li><a href="#realvnc-viewer" id="toc-realvnc-viewer" class="nav-link" data-scroll-target="#realvnc-viewer"><span class="header-section-number">2.10</span> RealVNC Viewer</a>
-  <ul class="collapse">
-  <li><a href="#realvnc-viewer-1" id="toc-realvnc-viewer-1" class="nav-link" data-scroll-target="#realvnc-viewer-1"><span class="header-section-number">2.10.1</span> RealVNC Viewer</a></li>
-  </ul></li>
+  <li><a href="#realvnc-viewer" id="toc-realvnc-viewer" class="nav-link" data-scroll-target="#realvnc-viewer"><span class="header-section-number">2.10</span> RealVNC Viewer</a></li>
   <li><a href="#optional-software" id="toc-optional-software" class="nav-link" data-scroll-target="#optional-software"><span class="header-section-number">2.11</span> Optional Software</a>
   <ul class="collapse">
   <li><a href="#anaconda" id="toc-anaconda" class="nav-link" data-scroll-target="#anaconda"><span class="header-section-number">2.11.1</span> Anaconda</a></li>
@@ -367,7 +370,7 @@ Important
 <div class="sourceCode" id="cb3"><pre class="sourceCode zsh code-with-copy"><code class="sourceCode zsh"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">which</span> git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><a href="assets/git-version.png" class="lightbox" data-glightbox="description: .lightbox-desc-1" data-gallery="quarto-lightbox-gallery-1" title="RStudio Terminal window"><img src="assets/git-version.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:60.0%" alt="RStudio Terminal window"></a></p>
+<p><a href="assets/git-version.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="RStudio Terminal window"><img src="assets/git-version.png" class="img-fluid quarto-figure quarto-figure-left figure-img" style="width:60.0%" alt="RStudio Terminal window"></a></p>
 <figcaption>RStudio Terminal window</figcaption>
 </figure>
 </div>
@@ -380,7 +383,7 @@ Important
 <div id="fig-options" class="lightbox quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-options-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="assets/git-path.png" class="lightbox" data-glightbox="description: .lightbox-desc-2" data-gallery="fig-git"><img src="assets/git-path.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
+<a href="assets/git-path.png" class="lightbox" data-gallery="fig-git" data-glightbox="description: .lightbox-desc-2"><img src="assets/git-path.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-options-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Global Options
@@ -394,7 +397,7 @@ Important
 <div id="fig-path" class="lightbox quarto-figure quarto-figure-center quarto-float anchored">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<a href="assets/git-path-browse.png" class="lightbox" data-glightbox="description: .lightbox-desc-3" data-gallery="fig-git"><img src="assets/git-path-browse.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
+<a href="assets/git-path-browse.png" class="lightbox" data-gallery="fig-git" data-glightbox="description: .lightbox-desc-3"><img src="assets/git-path-browse.png" class="img-fluid figure-img" data-ref-parent="fig-git"></a>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-path-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) git path
@@ -642,19 +645,23 @@ Note
 </section>
 <section id="realvnc-viewer" class="level2" data-number="2.10">
 <h2 data-number="2.10" class="anchored" data-anchor-id="realvnc-viewer"><span class="header-section-number">2.10</span> RealVNC Viewer</h2>
-<section id="realvnc-viewer-1" class="level3" data-number="2.10.1">
-<h3 data-number="2.10.1" class="anchored" data-anchor-id="realvnc-viewer-1"><span class="header-section-number">2.10.1</span> RealVNC Viewer</h3>
-<p>To connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses <a href="https://www.realvnc.com/en/connect/download/vnc/">RealVNC Server</a> to which we can connect using the client software, <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC Viewer</a>.</p>
+<p>To connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, <a href="https://www.realvnc.com/en/connect/download/viewer/">RealVNC Viewer</a>.</p>
 <p><a href="https://www.realvnc.com/en/connect/download/viewer/">Download</a> and install the software following the onscreen instructions (for macOS, drag the app to the <em>Applications</em> folder).</p>
-<section id="troubleshooting" class="level4" data-number="2.10.1.1">
-<h4 data-number="2.10.1.1" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">2.10.1.1</span> Troubleshooting</h4>
+<p>To connect to NMRBox using the RealVNC Viewer software, follow the instructions at <a href="https://www.bonvinlab.org/education/molmod_online/#use-of-nmrbox-virtual-machines-vms">Use of NMRbox virtual machines (VMs)</a>.</p>
+<section id="troubleshooting" class="level4" data-number="2.10.0.1">
+<h4 data-number="2.10.0.1" class="anchored" data-anchor-id="troubleshooting"><span class="header-section-number">2.10.0.1</span> Troubleshooting</h4>
 <dl>
 <dt>copy and paste to NMRbox stops working</dt>
 <dd>
-<p>In Terminal on NMRbox, type the following: <code>vncconfig &amp;</code> and hit return. See <a href="https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html">How to fix VNC Viewer copy-paste not working</a> for additional help.</p>
+<p>In Terminal on NMRbox, type the following: <code>vncconfig &amp;</code> and hit return. Leave the config settings window open. See <a href="https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html">How to fix VNC Viewer copy-paste not working</a> for additional help.</p>
+</dd>
+<dd>
+If copy and paste still don’t work, check terminal number <code>n</code> (use <code>tty</code>) and run <code>vncconfig -display :n &amp;</code>.
+</dd>
+<dd>
+These do not appear to work on NMRbox. I get the error: <code>vncconfig not found</code>.
 </dd>
 </dl>
-</section>
 </section>
 </section>
 <section id="optional-software" class="level2" data-number="2.11">
@@ -1195,13 +1202,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./scratch-pad.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>Scratch Pad</span>">
-        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Scratch Pad</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./gromacs-tutorial.html" class="pagination-link" aria-label="<span class='chapter-number'>3</span>&nbsp; <span class='chapter-title'>GROMACS Tutorial</span>">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">GROMACS Tutorial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","loop":false,"closeEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","selector":".lightbox","openEffect":"zoom","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
