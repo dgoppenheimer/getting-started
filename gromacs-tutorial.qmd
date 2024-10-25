@@ -1,6 +1,7 @@
 ---
-title: "GROMACS Tutorial"
+engine: knitr
 ---
+# GROMACS Tutorial {#sec-gromacs-tutorial}
 
 An exceptionally good tutorial of an intrinsically disordered protein has been developed by the [Bonvin Lab](https://www.bonvinlab.org/).
 
