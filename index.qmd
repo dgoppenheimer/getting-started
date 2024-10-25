@@ -1,9 +1,6 @@
-# Preface {.unnumbered}
+# Introduction {.unnumbered}
 
-This is a Quarto book.
+This site describes how to get your lab notebook.
 
-To learn more about Quarto books visit <https://quarto.org/docs/books>.
+Go to the @sec-software-needed section to get started.
 
-```{r}
-1 + 1
-```

@@ -11,7 +11,6 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
     - software-needed.qmd
     - scratch-pad.qmd
     - references.qmd
