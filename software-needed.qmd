@@ -132,11 +132,11 @@ Now, you should be able to push without needed to enter a username/password.
 
 2.  Click the *notifications* icon on GitHub.
 
-    ![](assets/github-notification1.png){.lightbox fig-align="left" width="75%"}
+    ![](assets/github-notification1.png){fig-align="left" width="75%"}
 
 3.  On the notifications page, click the *invitation to join ...* row.
 
-    ![](assets/github-colab.png){.lightbox fig-align="left" width="75%"}
+    ![](/assets/github-colab.png){.lightbox fig-align="left" width="75%"}
 
 4.  Click the *Accept* button to accept the invitation.
 
