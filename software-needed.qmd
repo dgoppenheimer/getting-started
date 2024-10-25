@@ -336,10 +336,20 @@ To connect to NMRBox using the RealVNC Viewer software, follow the instructions 
 #### Troubleshooting
 
 copy and paste to NMRbox stops working
+:   (macOS) Open the VNC Viewer app on your local computer. Go to *VNC Viewer* → *Preferences* → *Expert*. Filter the list by typing `Clipboard` into the *Filter* box. For the *Parameter:* `ClipboardKeystrokesEnable` change the *Value:* to `1`. Click *Apply*, then click *Okay*. Restart VNC Viewer.
 
-:   In Terminal on NMRbox, type the following: `vncconfig &` and hit return. Leave the config settings window open. See [How to fix VNC Viewer copy-paste not working](https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html) for additional help.
-:   If copy and paste still don't work, check terminal number `n` (use `tty`) and run `vncconfig -display :n &`.
-:   These do not appear to work on NMRbox. I get the error: `vncconfig not found`.
+::: {.callout-note}
+
+The fixes below did not work for me using Real VNC Viewer. 
+
+- In Terminal on NMRbox, type the following: `vncconfig &` and hit return. Leave the config settings window open. See [How to fix VNC Viewer copy-paste not working](https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html) for additional help.
+- If copy and paste still don't work, check terminal number `n` (use `tty`) and run `vncconfig -display :n &`.
+- These do not appear to work on NMRbox. I get the error: `vncconfig not found`.
+:::
+
+::: {.callout-tip}
+A viable workaround is to create a `.txt` file on your local machine with the list of GROMACS commands that you want to paste into NMRbox. Transfer the file to your working directory on NMRbox, and open it with the text editor, *Sublime Text*. Then you can cut and paste between *Sublime Text* and *Terminal* on NMRbox.
+:::
 
 ## Optional Software
 
