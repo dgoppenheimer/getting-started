@@ -653,15 +653,40 @@ Note
 <dl>
 <dt>copy and paste to NMRbox stops working</dt>
 <dd>
-<p>In Terminal on NMRbox, type the following: <code>vncconfig &amp;</code> and hit return. Leave the config settings window open. See <a href="https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html">How to fix VNC Viewer copy-paste not working</a> for additional help.</p>
-</dd>
-<dd>
-If copy and paste still don’t work, check terminal number <code>n</code> (use <code>tty</code>) and run <code>vncconfig -display :n &amp;</code>.
-</dd>
-<dd>
-These do not appear to work on NMRbox. I get the error: <code>vncconfig not found</code>.
+(macOS) Open the VNC Viewer app on your local computer. Go to <em>VNC Viewer</em> → <em>Preferences</em> → <em>Expert</em>. Filter the list by typing <code>Clipboard</code> into the <em>Filter</em> box. For the <em>Parameter:</em> <code>ClipboardKeystrokesEnable</code> change the <em>Value:</em> to <code>1</code>. Click <em>Apply</em>, then click <em>Okay</em>. Restart VNC Viewer.
 </dd>
 </dl>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The fixes below did not work for me using Real VNC Viewer.</p>
+<ul>
+<li>In Terminal on NMRbox, type the following: <code>vncconfig &amp;</code> and hit return. Leave the config settings window open. See <a href="https://www.anyviewer.com/how-to/vnc-viewer-copy-paste-2578.html">How to fix VNC Viewer copy-paste not working</a> for additional help.</li>
+<li>If copy and paste still don’t work, check terminal number <code>n</code> (use <code>tty</code>) and run <code>vncconfig -display :n &amp;</code>.</li>
+<li>These do not appear to work on NMRbox. I get the error: <code>vncconfig not found</code>.</li>
+</ul>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A viable workaround is to create a <code>.txt</code> file on your local machine with the list of GROMACS commands that you want to paste into NMRbox. Transfer the file to your working directory on NMRbox, and open it with the text editor, <em>Sublime Text</em>. Then you can cut and paste between <em>Sublime Text</em> and <em>Terminal</em> on NMRbox.</p>
+</div>
+</div>
 </section>
 </section>
 <section id="optional-software" class="level2" data-number="2.11">
@@ -1208,7 +1233,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","closeEffect":"zoom","loop":false});
+<script>var lightboxQuarto = GLightbox({"loop":false,"selector":".lightbox","descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;
