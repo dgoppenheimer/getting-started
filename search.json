@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Preface\nThis is a Quarto book.\nTo learn more about Quarto books visit https://quarto.org/docs/books.\n\n1 + 1\n\n[1] 2",
+    "text": "Introduction\nThis site describes how to get your lab notebook.\nGo to the 2  Software Needed section to get started.",
     "crumbs": [
-      "Preface"
+      "Introduction"
     ]
   },
   {
@@ -14,169 +14,149 @@
     "href": "intro.html",
     "title": "1  Introduction",
     "section": "",
-    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
+    "text": "Content coming soon.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "2  Summary",
-    "section": "",
-    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
-    ]
-  },
-  {
     "objectID": "software-needed.html",
     "href": "software-needed.html",
-    "title": "3  Software Needed",
+    "title": "2  Software Needed",
     "section": "",
-    "text": "3.1 R and RStudio\nGo to RStudio Desktop download page to download the R and RStudio Desktop installers.\nThe R link will take you to the The Comprehensive R Archive Network where you can download an R installer for your operating system.\nThe RStudio link will download the apropriate installer for your operating system.\nDownload and launch the installers and follow the installation instructions.",
+    "text": "2.1 R and RStudio\nGo to RStudio Desktop download page to download the R and RStudio Desktop installers.\nThe R link will take you to the The Comprehensive R Archive Network where you can download an R installer for your operating system.\nThe RStudio link will download the apropriate installer for your operating system.\nDownload and launch the installers and follow the installation instructions.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#r-and-rstudio",
     "href": "software-needed.html#r-and-rstudio",
-    "title": "3  Software Needed",
+    "title": "2  Software Needed",
     "section": "",
     "text": "Note\n\n\n\nYou need to install R first, then RStudio.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#git-and-a-github-account",
     "href": "software-needed.html#git-and-a-github-account",
-    "title": "3  Software Needed",
-    "section": "3.2 Git and a GitHub Account",
-    "text": "3.2 Git and a GitHub Account\n \nWhat is version control?\n\nVersion control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time1.\n\nYou can get all you need to know about git from the Pro Git Book. This is a great introduction to version control and git.\n\n3.2.1 User Manual\nHappy Git and GitHub for the useR\nThis is an excellent resource for all things Git, GitHub, and RStudio. Use the left navigation to Quickly find relevant topics for how to integrate Git and GitHub with RStudio.\n\n\n\n\n\n\nTip\n\n\n\nWe will use git within RStudio. On macOS, RStudio will echo the mac terminal. I am using Oh My Zsh as my zsh framework, and Wezterm as my terminal emulator rather than the macOS default terminal application. I also have the latest git version installed through Homebrew. I installed the Starship prompt (using Homebrew) to customize my terminal environment.\nThis means that I need to adjust the settings in RStudio to use my zsh environment. Go to Tools → Global Options → Terminal and choose Zsh from the drop-down menu for the New terminals open with option.\n\n\n\n\n3.2.2 Git Tutorials\n\n\n\n\n\n\nImportant\n\n\n\nHere are the learning objectives for the git section. After taking the tutorials, you will be able to:\n\nCreate a GitHub account.\nInstall Git on your local computer.\nCreate ssh keys to connect your local computer to GitHub.\nCreate a project and push it to GitHub.\nFork a project from GitHub.\n\n\n\n\n3.2.2.1 Videos\n\nGit and GitHub for Beginners - Crash Course\nGit Tutorial for Absolute Beginners\nHow to setup SSH in GitHub by example\nHow to SSH into GitHub on Windows example\nHow to Fork a GitHub Repository\n\n\n\n3.2.2.2 Text-based\n\nLearn the Basics of Git in Under 10 Minutes\nHow to Fork a GitHub Repository\nFork a repository\n\n\n\n3.2.2.3 More Guides to Git\n\nIntroduction to Version Control This is hosted by Atlassian, a company that uses their own cloud-based git repository called BitBucket. We will be using GitHub for all our work, so if you try tutorials on this site, remember to use github instead of bitbucket when connecting to the remote repository. Focus on the Beginner and Getting Started sections.\nGit and GitHub\nAn “adavanced beginner” guide to git",
+    "title": "2  Software Needed",
+    "section": "2.2 Git and a GitHub Account",
+    "text": "2.2 Git and a GitHub Account\n \nWhat is version control?\n\nVersion control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time1.\n\nYou can get all you need to know about git from the Pro Git Book. This is a great introduction to version control and git.\n\n2.2.1 User Manual\nHappy Git and GitHub for the useR\nThis is an excellent resource for all things Git, GitHub, and RStudio. Use the left navigation to Quickly find relevant topics for how to integrate Git and GitHub with RStudio.\n\n\n\n\n\n\nTip\n\n\n\nWe will use git within RStudio. On macOS, RStudio will echo the mac terminal. I am using Oh My Zsh as my zsh framework, and Wezterm as my terminal emulator rather than the macOS default terminal application. I also have the latest git version installed through Homebrew. I installed the Starship prompt (using Homebrew) to customize my terminal environment.\nThis means that I need to adjust the settings in RStudio to use my zsh environment. Go to Tools → Global Options → Terminal and choose Zsh from the drop-down menu for the New terminals open with option.\n\n\n\n\n2.2.2 Git Tutorials\n\n\n\n\n\n\nImportant\n\n\n\nHere are the learning objectives for the git section. After taking the tutorials, you will be able to:\n\nCreate a GitHub account.\nInstall Git on your local computer.\nCreate ssh keys to connect your local computer to GitHub.\nCreate a project and push it to GitHub.\nFork a project from GitHub.\n\n\n\n\n2.2.2.1 Videos\n\nGit and GitHub for Beginners - Crash Course\nGit Tutorial for Absolute Beginners\nHow to setup SSH in GitHub by example\nHow to SSH into GitHub on Windows example\nHow to Fork a GitHub Repository\n\n\n\n2.2.2.2 Text-based\n\nLearn the Basics of Git in Under 10 Minutes\nHow to Fork a GitHub Repository\nFork a repository\n\n\n\n2.2.2.3 More Guides to Git\n\nIntroduction to Version Control This is hosted by Atlassian, a company that uses their own cloud-based git repository called BitBucket. We will be using GitHub for all our work, so if you try tutorials on this site, remember to use github instead of bitbucket when connecting to the remote repository. Focus on the Beginner and Getting Started sections.\nGit and GitHub\nAn “adavanced beginner” guide to git",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#install-git",
     "href": "software-needed.html#install-git",
-    "title": "3  Software Needed",
-    "section": "3.3 Install Git",
-    "text": "3.3 Install Git\n\n3.3.1 macOS and Linux\nGit is pre-installed on macOS and Linux computers, but users may want to update to the latest version.\nOn Macs, installation of Git is easiest using a package manager like Homebrew. If you do not have Homebrew installed, follow the instructions on the Homebrew homepage. Then install Git with:\nbrew install git\nCheck the installation by opening the terminal tab in RStudio (or use whatever terminal you already have open) and entering:\ngit --version\n\n3.3.1.1 Set the git path in RStudio\nTo get RStudio to use the updated Git, you need to tell RStudio where to find the newly installed Git. First, get the path to the Git executable by typing:\nwhich git\n\n\n\nRStudio Terminal window\n\n\nNext, in RStudio, go to Tools → Global Options. You will get the menu in (a):\n\n\n\n\n\n\n\n\n\n\n\n(a) Global Options\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) git path\n\n\n\n\n\n\n\nFigure 3.1: Setting the Git path in RStudio\n\n\n\n\nChoose Git/SVN.\nBrowse to git using the path obtained from the which git command. See (b), above.\nClick Apply.\nClick OK.\n\n\n\n\n\n\n\nNote\n\n\n\nThe git executable in /opt/homebrew/bin/git is an alias that points to /opt/homebrew/Cellar/git/2.45.0/bin/git. When you browse to /opt/homebrew/bin/git, it gets resolved to the correct path.\n\n\nNow RStudio will use the updated Git.\n\n\n\n3.3.2 Windows\nWindows users should go to the Git website to get the latest Windows build.",
+    "title": "2  Software Needed",
+    "section": "2.3 Install Git",
+    "text": "2.3 Install Git\n\n2.3.1 macOS and Linux\nGit is pre-installed on macOS and Linux computers, but users may want to update to the latest version.\nOn Macs, installation of Git is easiest using a package manager like Homebrew. If you do not have Homebrew installed, follow the instructions on the Homebrew homepage. Then install Git with:\nbrew install git\nCheck the installation by opening the terminal tab in RStudio (or use whatever terminal you already have open) and entering:\ngit --version\n\n2.3.1.1 Set the git path in RStudio\nTo get RStudio to use the updated Git, you need to tell RStudio where to find the newly installed Git. First, get the path to the Git executable by typing:\nwhich git\n\n\n\nRStudio Terminal window\n\n\nNext, in RStudio, go to Tools → Global Options. You will get the menu in (a):\n\n\n\n\n\n\n\n\n\n\n\n(a) Global Options\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b) git path\n\n\n\n\n\n\n\nFigure 2.1: Setting the Git path in RStudio\n\n\n\n\nChoose Git/SVN.\nBrowse to git using the path obtained from the which git command. See (b), above.\nClick Apply.\nClick OK.\n\n\n\n\n\n\n\nNote\n\n\n\nThe git executable in /opt/homebrew/bin/git is an alias that points to /opt/homebrew/Cellar/git/2.45.0/bin/git. When you browse to /opt/homebrew/bin/git, it gets resolved to the correct path.\n\n\nNow RStudio will use the updated Git.\n\n\n\n2.3.2 Windows\nWindows users should go to the Git website to get the latest Windows build.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#get-a-github-account",
     "href": "software-needed.html#get-a-github-account",
-    "title": "3  Software Needed",
-    "section": "3.4 Get a GitHub Account",
-    "text": "3.4 Get a GitHub Account\n\n3.4.1 Linking RStudio to GitHub\n\n3.4.1.1 ssh keys\nSee Chapter 10 Set up keys for SSH. I already have a key pair that I have used for GitHub.\n\nAdd key to ssh-agent. Use the following command in the terminal:\neval \"$(ssh-agent -s)\"\nYou should see a response like the following, except the pid number will likely be different.\nAgent pid 15360\nIf you use MacOS &gt; 10.12.1, create a file ~/.ssh/config with the following contents:\nHost *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25519\nAdd your key to the ssh-agent.\nssh-add --apple-load-keychain ~/.ssh/id_ed25519\nYou should now be able to push to GitHub!\n\nIf you are asked for a username and password after setting ssh keys, try the following:\ngit remote -v\norigin  https://github.com/dgoppenheimer/notebook-template.git (fetch)\norigin  https://github.com/dgoppenheimer/notebook-template.git (push)\nIf you get the https://... response from git, then you need to change how you access the remote repository.\ngit remote set-url origin git@github.com:dgoppenheimer/notebook-template.git\nNow, you should be able to push without needed to enter a username/password.",
+    "title": "2  Software Needed",
+    "section": "2.4 Get a GitHub Account",
+    "text": "2.4 Get a GitHub Account\n\n2.4.1 Linking RStudio to GitHub\n\n2.4.1.1 ssh keys\nSee Chapter 10 Set up keys for SSH. I already have a key pair that I have used for GitHub.\n\nAdd key to ssh-agent. Use the following command in the terminal:\neval \"$(ssh-agent -s)\"\nYou should see a response like the following, except the pid number will likely be different.\nAgent pid 15360\nIf you use MacOS &gt; 10.12.1, create a file ~/.ssh/config with the following contents:\nHost *\nAddKeysToAgent yes\nUseKeychain yes\nIdentityFile ~/.ssh/id_ed25519\nAdd your key to the ssh-agent.\nssh-add --apple-load-keychain ~/.ssh/id_ed25519\nYou should now be able to push to GitHub!\n\nIf you are asked for a username and password after setting ssh keys, try the following:\ngit remote -v\norigin  https://github.com/dgoppenheimer/notebook-template.git (fetch)\norigin  https://github.com/dgoppenheimer/notebook-template.git (push)\nIf you get the https://... response from git, then you need to change how you access the remote repository.\ngit remote set-url origin git@github.com:dgoppenheimer/notebook-template.git\nNow, you should be able to push without needed to enter a username/password.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#get-the-notebook",
     "href": "software-needed.html#get-the-notebook",
-    "title": "3  Software Needed",
-    "section": "3.5 Get the Notebook",
-    "text": "3.5 Get the Notebook\n\nAsk to be a collaborator on the notebook-template repository.\nClick the notifications icon on GitHub.\n\n\n\n\n\nOn the notifications page, click the invitation to join … row.\n\n\n\n\n\nClick the Accept button to accept the invitation.\n\n\n\n\n\nClick the Fork button to create your own fork of this project.\n\n\n\n\n\nGive the project a new name. Use a name that describes the project (Hif1alpha, p53TAD, etc.). Here I chose test-fork-notebook because I am using this fork for testing purposes. Then click Create fork.\n\n\n\n\n\nNow you have your own copy of the Notebook template.\nClone the forked repository. On your local computer, Create a new project in RStudio. The New Project Wizard will open. Choose the Version Control option.\n\n\n\n\n\nChoose the Git option.\n\n\n\n\n\nGo to your repository page on GitHub in your browser.\n\nClick the Code button.\nChoose HTTPS.\nCopy the URL to your clipboard.\n\n\n\n\n\n\nGo back to the RStudio New Project Wizard window.\n\nPaste in the URL that you copied from your GitHub project page.\nChoose a name for the directory for the project. I usually make the directory name the same as the GitHub project name, in this case, test-fork-notebook.\nClick Create Project. The project will be cloned into the directory that you specified.\n\n\n\n\n\n\nYou now have your new project in your local directory linked to the repository in GitHub. Make changes/additions, do git add ., git commit -m \"added new files\", and git push, to push the changes to GitHub.",
+    "title": "2  Software Needed",
+    "section": "2.5 Get the Notebook",
+    "text": "2.5 Get the Notebook\n\nAsk to be a collaborator on the notebook-template repository.\nClick the notifications icon on GitHub.\n\n\n\n\n\nOn the notifications page, click the invitation to join … row.\n\n\n\n\n\nClick the Accept button to accept the invitation.\n\n\n\n\n\nClick the Fork button to create your own fork of this project.\n\n\n\n\n\nGive the project a new name. Use a name that describes the project (Hif1alpha, p53TAD, etc.). Here I chose test-fork-notebook because I am using this fork for testing purposes. Then click Create fork.\n\n\n\n\n\nNow you have your own copy of the Notebook template.\nClone the forked repository. On your local computer, Create a new project in RStudio. The New Project Wizard will open. Choose the Version Control option.\n\n\n\n\n\nChoose the Git option.\n\n\n\n\n\nGo to your repository page on GitHub in your browser.\n\nClick the Code button.\nChoose HTTPS.\nCopy the URL to your clipboard.\n\n\n\n\n\n\nGo back to the RStudio New Project Wizard window.\n\nPaste in the URL that you copied from your GitHub project page.\nChoose a name for the directory for the project. I usually make the directory name the same as the GitHub project name, in this case, test-fork-notebook.\nClick Create Project. The project will be cloned into the directory that you specified.\n\n\n\n\n\n\nYou now have your new project in your local directory linked to the repository in GitHub. Make changes/additions, do git add ., git commit -m \"added new files\", and git push, to push the changes to GitHub.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#keeping-the-forked-notebook-in-sync-with-the-original-project",
     "href": "software-needed.html#keeping-the-forked-notebook-in-sync-with-the-original-project",
-    "title": "3  Software Needed",
-    "section": "3.6 Keeping the forked Notebook in sync with the original project",
-    "text": "3.6 Keeping the forked Notebook in sync with the original project\nHopefully you will not need to do this often, but the steps below will import any changes to the original project while keeping all the changes you have made to the forked project.\n\n3.6.1 Define the upstream repository\nFrom GitHub Docs Configuring a remote repository for a fork.\n\nOpen Terminal.\nList the current configured remote repository for your fork.\n$ git remote -v\n&gt; origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (fetch)\n&gt; origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (push)\nSpecify a new remote upstream repository that will be synced with the fork. This is the original repository that we created our fork from.\ngit remote add upstream https://github.com/dgoppenheimer/notebook-template.git\nVerify the new upstream repository you’ve specified for your fork.\ngit remote -v\norigin  https://github.com/dgo-testing/test-fork-notebook.git (fetch)\norigin  https://github.com/dgo-testing/test-fork-notebook.git (push)\nupstream https://github.com/dgoppenheimer/notebook-template.git (fetch)\nupstream https://github.com/dgoppenheimer/notebook-template.git (push)\n\n\n\n3.6.2 Sync the upstream repository with your fork\n\nFetch the branches and their respective commits from the upstream repository. Commits to BRANCH-NAME will be stored in the local branch upstream/BRANCH-NAME.\n$ git fetch upstream\n&gt; From https://github.com/dgoppenheimer/notebook-template\n&gt; * [new branch]      main       -&gt; upstream/main\nI made some changes to notebook-template and committed, and pushed to GitHub.\n$ git fetch upstream\nremote: Enumerating objects: 18, done.\n&gt; remote: Counting objects: 100% (18/18), done.\n&gt; remote: Compressing objects: 100% (13/13), done.\n&gt; remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0\n&gt; Unpacking objects: 100% (14/14), 1.71 MiB | 4.75 MiB/s, done.\n&gt; From https://github.com/dgoppenheimer/notebook-template\n&gt;    dae15a8..c1a638a  main       -&gt; upstream/main\nCheck out your fork’s local default branch - in this case, we use main.\n$ git checkout main\n&gt; Switched to branch 'main'\nMerge the changes from the upstream default branch - in this case, upstream/main - into your local default branch. This brings your fork’s default branch into sync with the upstream repository, without losing your local changes.\ngit merge upstream/main -m \"updating fork from upstream\"\n\n\n\n3.6.3 Assessments\nLet’s see what you have learned. You should have accomplished all of the tasks below if you were successful with the tasks listed above.\n\nFork the notebook-template project from GitHub.\nRename the project &lt;your last name&gt;-notebook (without the &lt; &gt; symbols).\nPush your new project (your notebook) back to GitHub.\nCreate a new quarto document titled: “My Notebook”. You can use this document to take notes, or whatever.\n\n\nUpdate the _quarto.yml file so that your document can be found in the table of contents.\n\n\nAdd and commit the project to your local repository.\nPush the changes to your remote repository.\nInvite me to clone the your notebook. Use oppenhe@ufl.edu.",
+    "title": "2  Software Needed",
+    "section": "2.6 Keeping the forked Notebook in sync with the original project",
+    "text": "2.6 Keeping the forked Notebook in sync with the original project\nHopefully you will not need to do this often, but the steps below will import any changes to the original project while keeping all the changes you have made to the forked project.\n\n2.6.1 Define the upstream repository\nFrom GitHub Docs Configuring a remote repository for a fork.\n\nOpen Terminal.\nList the current configured remote repository for your fork.\n$ git remote -v\n&gt; origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (fetch)\n&gt; origin  https://github.com/YOUR-USERNAME/YOUR-FORK.git (push)\nSpecify a new remote upstream repository that will be synced with the fork. This is the original repository that we created our fork from.\ngit remote add upstream https://github.com/dgoppenheimer/notebook-template.git\nVerify the new upstream repository you’ve specified for your fork.\ngit remote -v\norigin  https://github.com/dgo-testing/test-fork-notebook.git (fetch)\norigin  https://github.com/dgo-testing/test-fork-notebook.git (push)\nupstream https://github.com/dgoppenheimer/notebook-template.git (fetch)\nupstream https://github.com/dgoppenheimer/notebook-template.git (push)\n\n\n\n2.6.2 Sync the upstream repository with your fork\n\nFetch the branches and their respective commits from the upstream repository. Commits to BRANCH-NAME will be stored in the local branch upstream/BRANCH-NAME.\n$ git fetch upstream\n&gt; From https://github.com/dgoppenheimer/notebook-template\n&gt; * [new branch]      main       -&gt; upstream/main\nI made some changes to notebook-template and committed, and pushed to GitHub.\n$ git fetch upstream\nremote: Enumerating objects: 18, done.\n&gt; remote: Counting objects: 100% (18/18), done.\n&gt; remote: Compressing objects: 100% (13/13), done.\n&gt; remote: Total 14 (delta 1), reused 14 (delta 1), pack-reused 0\n&gt; Unpacking objects: 100% (14/14), 1.71 MiB | 4.75 MiB/s, done.\n&gt; From https://github.com/dgoppenheimer/notebook-template\n&gt;    dae15a8..c1a638a  main       -&gt; upstream/main\nCheck out your fork’s local default branch - in this case, we use main.\n$ git checkout main\n&gt; Switched to branch 'main'\nMerge the changes from the upstream default branch - in this case, upstream/main - into your local default branch. This brings your fork’s default branch into sync with the upstream repository, without losing your local changes.\ngit merge upstream/main -m \"updating fork from upstream\"\n\n\n\n2.6.3 Assessments\nLet’s see what you have learned. You should have accomplished all of the tasks below if you were successful with the tasks listed above.\n\nFork the notebook-template project from GitHub.\nRename the project &lt;your last name&gt;-notebook (without the &lt; &gt; symbols).\nPush your new project (your notebook) back to GitHub.\nCreate a new quarto document titled: “My Notebook”. You can use this document to take notes, or whatever.\n\n\nUpdate the _quarto.yml file so that your document can be found in the table of contents.\n\n\nAdd and commit the project to your local repository.\nPush the changes to your remote repository.\nInvite me to clone the your notebook. Use oppenhe@ufl.edu.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#vs-code",
     "href": "software-needed.html#vs-code",
-    "title": "3  Software Needed",
-    "section": "3.7 VS Code",
-    "text": "3.7 VS Code\nDownload and launch the installer and follow the instructions.\nVisual Studio Code",
+    "title": "2  Software Needed",
+    "section": "2.7 VS Code",
+    "text": "2.7 VS Code\nDownload and launch the installer and follow the instructions.\nVisual Studio Code",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#zotero",
     "href": "software-needed.html#zotero",
-    "title": "3  Software Needed",
-    "section": "3.8 Zotero",
-    "text": "3.8 Zotero\n\n3.8.1 Zotero Desktop\nZotero is available for macOS, Windows, Linux, and iOS.\nDownload Zotero from the Zotero website.\nInstallation is straightforward, but installation instructions are available if needed.\n\n\n3.8.2 Zotero Connector\nAlso install the Zotero Connector for the Chrome web browser for easy importing of items into your Zotero library.\n\n\n3.8.3 Better BibTeX for Zotero\nTo easily cite references in your Quarto documents in RStudio, install the Better BibTeX plugin.\n\n\n3.8.4 Zotero 7 Beta\nThere is a beta release for Zotero 7. This has (I believe) a nicer interface, and new features. See the Zotero 7 beta announcement for more information.",
+    "title": "2  Software Needed",
+    "section": "2.8 Zotero",
+    "text": "2.8 Zotero\n\n2.8.1 Zotero Desktop\nZotero is available for macOS, Windows, Linux, and iOS.\nDownload Zotero from the Zotero website.\nInstallation is straightforward, but installation instructions are available if needed.\n\n\n2.8.2 Zotero Connector\nAlso install the Zotero Connector for the Chrome web browser for easy importing of items into your Zotero library.\n\n\n2.8.3 Better BibTeX for Zotero\nTo easily cite references in your Quarto documents in RStudio, install the Better BibTeX plugin.\n\n\n2.8.4 Zotero 7 Beta\nThere is a beta release for Zotero 7. This has (I believe) a nicer interface, and new features. See the Zotero 7 beta announcement for more information.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#chimerax",
     "href": "software-needed.html#chimerax",
-    "title": "3  Software Needed",
-    "section": "3.9 ChimeraX",
-    "text": "3.9 ChimeraX\n\nGo to the ChimeraX download page.\nDownload the installer appropriate for your operating system.\nAccept the license agreement.\nFollow the instructions for your operating system. For example, on macOS (M2 chip):\nOpen the disk image.\nDrag the ChimeraX application to your Applications folder.",
+    "title": "2  Software Needed",
+    "section": "2.9 ChimeraX",
+    "text": "2.9 ChimeraX\n\nGo to the ChimeraX download page.\nDownload the installer appropriate for your operating system.\nAccept the license agreement.\nFollow the instructions for your operating system. For example, on macOS (M2 chip):\nOpen the disk image.\nDrag the ChimeraX application to your Applications folder.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#realvnc-viewer",
     "href": "software-needed.html#realvnc-viewer",
-    "title": "3  Software Needed",
-    "section": "3.10 RealVNC Viewer",
-    "text": "3.10 RealVNC Viewer\n\n3.10.1 RealVNC Viewer\nTo connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, RealVNC Viewer.\nDownload and install the software following the onscreen instructions (for macOS, drag the app to the Applications folder).\n\n3.10.1.1 Troubleshooting\n\ncopy and paste to NMRbox stops working\n\nIn Terminal on NMRbox, type the following: vncconfig & and hit return. See How to fix VNC Viewer copy-paste not working for additional help.",
+    "title": "2  Software Needed",
+    "section": "2.10 RealVNC Viewer",
+    "text": "2.10 RealVNC Viewer\n\n2.10.1 RealVNC Viewer\nTo connect to NMRbox to run GROMACS simulations, you need to install VNC software. VNC is an abbreviation of Virtual Network Computing, which is another way to say screen sharing. NMRbox uses RealVNC Server to which we can connect using the client software, RealVNC Viewer.\nDownload and install the software following the onscreen instructions (for macOS, drag the app to the Applications folder).\n\n2.10.1.1 Troubleshooting\n\ncopy and paste to NMRbox stops working\n\nIn Terminal on NMRbox, type the following: vncconfig & and hit return. See How to fix VNC Viewer copy-paste not working for additional help.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#optional-software",
     "href": "software-needed.html#optional-software",
-    "title": "3  Software Needed",
-    "section": "3.11 Optional Software",
-    "text": "3.11 Optional Software\n\n3.11.1 Anaconda\n\n3.11.1.1 Update Homebrew\nIn terminal:\n\n\n\nTerminal\n\ncd ~\n1brew update\n2brew upgrade\n\n\n\n1\n\nUpdate the Homebrew package manager.\n\n2\n\nUpgrade the packages in Homebrew. Note: This can take a long time (hours) depending on how many packages need upgrading.\n\n\n\n\n\n\n3.11.1.2 Install Anaconda\n\n\n\nTerminal\n\nbrew install --cask anaconda\n\n\nAfter installation is complete, add the path to .zshrc and restart shell.\n\n\n\nTerminal\n\necho 'export PATH=\"/usr/local/Homebrew/anaconda3/bin:$PATH\"' &gt;&gt; ~/.zshrc\nsource ~/.zshrc\n\n\n\n\n3.11.1.3 Activate Anaconda\n\n\n\nTerminal\n\n1source /usr/local/Homebrew/anaconda3/bin/activate\n2conda init zsh\n\n\n\n1\n\nUse the path to the Homebrew-installed Anaconda.\n\n2\n\nInitialize your preferred shell to work with conda.\n\n\n\n\nTest the installation.\n\n\n\nTerminal\n\nconda --version\nconda 25.4.0\n\n\n✅ Success!\n\n\n3.11.1.4 Create and activate a conda Environment for the Plumed Masterclass Tutuorial\n\n\n\nTerminal\n\nconda create --name plumed-masterclass-2022\n\n\nActivate the environment with:\n\n\n\nTerminal\n\nconda activate plumed-masterclass-2022\n\n\n\n\n\n\n\n\nNote\n\n\n\nTo deactivate an active environment, use\n\n\n\nTerminal\n\nconda deactivate\n\n\n\n\n\n\n\nRStudio Terminal window\nFigure 3.1 (a): Global Options\nFigure 3.1 (b): git path",
+    "title": "2  Software Needed",
+    "section": "2.11 Optional Software",
+    "text": "2.11 Optional Software\n\n2.11.1 Anaconda\n\n2.11.1.1 Update Homebrew\nIn terminal:\n\n\n\nTerminal\n\ncd ~\n1brew update\n2brew upgrade\n\n\n\n1\n\nUpdate the Homebrew package manager.\n\n2\n\nUpgrade the packages in Homebrew. Note: This can take a long time (hours) depending on how many packages need upgrading.\n\n\n\n\n\n\n2.11.1.2 Install Anaconda\n\n\n\nTerminal\n\nbrew install --cask anaconda\n\n\nAfter installation is complete, add the path to .zshrc and restart shell.\n\n\n\nTerminal\n\necho 'export PATH=\"/usr/local/Homebrew/anaconda3/bin:$PATH\"' &gt;&gt; ~/.zshrc\nsource ~/.zshrc\n\n\n\n\n2.11.1.3 Activate Anaconda\n\n\n\nTerminal\n\n1source /usr/local/Homebrew/anaconda3/bin/activate\n2conda init zsh\n\n\n\n1\n\nUse the path to the Homebrew-installed Anaconda.\n\n2\n\nInitialize your preferred shell to work with conda.\n\n\n\n\nTest the installation.\n\n\n\nTerminal\n\nconda --version\nconda 25.4.0\n\n\n✅ Success!\n\n\n2.11.1.4 Create and activate a conda Environment for the Plumed Masterclass Tutuorial\n\n\n\nTerminal\n\nconda create --name plumed-masterclass-2022\n\n\nActivate the environment with:\n\n\n\nTerminal\n\nconda activate plumed-masterclass-2022\n\n\n\n\n\n\n\n\nNote\n\n\n\nTo deactivate an active environment, use\n\n\n\nTerminal\n\nconda deactivate\n\n\n\n\n\n\n\nRStudio Terminal window\nFigure 2.1 (a): Global Options\nFigure 2.1 (b): git path",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "software-needed.html#footnotes",
     "href": "software-needed.html#footnotes",
-    "title": "3  Software Needed",
+    "title": "2  Software Needed",
     "section": "",
     "text": "from the Atlassian webpage on What is version control?↩︎",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Software Needed</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Software Needed</span>"
     ]
   },
   {
     "objectID": "scratch-pad.html",
     "href": "scratch-pad.html",
-    "title": "4  Scratch Pad",
+    "title": "3  Scratch Pad",
     "section": "",
     "text": "Just a place for quick notes",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scratch Pad</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "References"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Scratch Pad</span>"
     ]
   }
 ]
