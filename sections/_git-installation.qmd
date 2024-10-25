@@ -22,14 +22,14 @@ To get RStudio to use the updated Git, you need to tell RStudio where to find th
 which git
 ```
 
-![RStudio Terminal window](../assets/git-version.png){.lightbox fig-align="left" width="60%"}
+![RStudio Terminal window](/Users/davidoppenheimer/RStudio/getting-started/assets/git-version.png){.lightbox fig-align="left" width="60%"}
 
 Next, in RStudio, go to *Tools* → *Global Options*. You will get the menu in *(a)*:
 
 ::: {#fig-git layout-ncol="2" layout-valign="bottom"}
-![Global Options](../assets/git-path.png){#fig-options .lightbox}
+![Global Options](/Users/davidoppenheimer/RStudio/getting-started/assets/git-path.png){#fig-options .lightbox}
 
-![git path](../assets/git-path-browse.png){#fig-path .lightbox}
+![git path](/Users/davidoppenheimer/RStudio/getting-started/assets/git-path-browse.png){#fig-path .lightbox}
 
 Setting the Git path in RStudio
 :::
