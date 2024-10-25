@@ -4,4 +4,4 @@ This site describes how to get your lab notebook.
 
 Go to the @sec-software-needed section to get started.
 
-Then take the @gromacs-tutorial.
+Then take the @sec-gromacs-tutorial.
