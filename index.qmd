@@ -1,4 +1,25 @@
+---
+engine: knitr
+jupyter: python3
+---
+
 # Preface {.unnumbered}
+
+```{zsh}
+#| eval: false
+#| echo: false
+
+####  Transferring the site to GitHub  ####
+
+## Render the site locally.
+## Proofread carefully.
+## Commit changes to git locally.
+## Push changes to GitHub (main branch).
+## Run `quarto publish gh-pages` in the project root.
+## Refresh browser to see changes.
+## Bob's your uncle.
+
+```
 
 This site describes how to get your lab notebook.
 
