@@ -1,0 +1,41 @@
+---
+title: "RStudio"
+engine: knitr
+---
+
+
+## Getting Started with RStudio
+
+
+### R Markdown
+
+[R Markdown](https://bookdown.org/yihui/rmarkdown/) is a flavor of [Markdown](https://www.markdownguide.org/) used to write richly formatted documents, while retaining maximum portability. Markdown documents are text documents and can be opened by virtually any computer or word processing program. In fact, all (AFAIK) modern computer operating systems have pre-installed applications that can read and edit text documents. R Markdown as been developed to integrate well with the R programming language such that you can write text and run code in the same document. To see how R Markdown is used in RStudio, visit the [Get Started](https://rmarkdown.rstudio.com/lesson-1.html) section of the [R Markdown from RStudio](https://rmarkdown.rstudio.com/index.html) website.
+
+Markdown was created by [John Gruber](https://daringfireball.net/projects/markdown/) in 2004 as an easy to read and type markup language. Documents written in Markdown can be easily converted to HTML (the language of the web) PDF, or even MS Word.
+
+For information about Quarto, see [Chapter 28 Quarto](https://r4ds.hadley.nz/quarto). Note that Quarto is implemented natively in RStudio, so you do not need to use the command line (unless you want to).
+
+#### Writing in Markdown
+
+See the [Markdown Guide](https://www.markdownguide.org/) and pay particular attention to the sections on [Basic Syntax](https://www.markdownguide.org/basic-syntax/) and [Extended Syntax](https://www.markdownguide.org/extended-syntax/) for how to properly format Markdown documents.
+
+### Quarto and Markdown
+
+We are using Quarto documents in RStudio. Quarto is a slightly different "flavor" of Markdown based on [Pandoc Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).
+
+> Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax[^quarto-user-guide-1].
+
+[^quarto-user-guide-1]: [Quarto Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html)
+
+See the Quarto [Markdown Basics](https://quarto.org/docs/authoring/markdown-basics.html) page for more information about the syntax used by Quarto Markdown.
+
+
+## Resources
+
+- [R Markdown from RStudio](https://rmarkdown.rstudio.com/index.html)
+- [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+- [Markdown Guide](https://www.markdownguide.org/)
+- [Chapter 28 Quarto](https://r4ds.hadley.nz/quarto) in the [R for Data Science](https://r4ds.hadley.nz/) online book.
+- [R for Data Science (2e)](https://r4ds.hadley.nz/) for all things R. This is an excellent resource.
+
+

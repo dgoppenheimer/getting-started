@@ -12,6 +12,7 @@ book:
     - index.qmd
     - intro.qmd
     - software-needed.qmd
+    - rstudio.qmd
     - gromacs-tutorial.qmd
     - scratch-pad.qmd
     - references.qmd
