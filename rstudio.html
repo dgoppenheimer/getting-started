@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2024-10-02">
+<meta name="dcterms.date" content="2024-11-08">
 
-<title>Getting Started - 5&nbsp; Scratch Pad</title>
+<title>Getting Started - 3&nbsp; RStudio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./gromacs-tutorial.html" rel="prev">
+<link href="./gromacs-tutorial.html" rel="next">
+<link href="./software-needed.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./scratch-pad.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Scratch Pad</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./rstudio.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -128,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="./rstudio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio</span></span></a>
   </div>
 </li>
@@ -140,7 +140,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./scratch-pad.html" class="sidebar-item-text sidebar-link active">
+  <a href="./scratch-pad.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Scratch Pad</span></span></a>
   </div>
 </li>
@@ -156,14 +156,25 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#getting-started-with-rstudio" id="toc-getting-started-with-rstudio" class="nav-link active" data-scroll-target="#getting-started-with-rstudio"><span class="header-section-number">3.1</span> Getting Started with RStudio</a>
+  <ul class="collapse">
+  <li><a href="#r-markdown" id="toc-r-markdown" class="nav-link" data-scroll-target="#r-markdown"><span class="header-section-number">3.1.1</span> R Markdown</a></li>
+  <li><a href="#quarto-and-markdown" id="toc-quarto-and-markdown" class="nav-link" data-scroll-target="#quarto-and-markdown"><span class="header-section-number">3.1.2</span> Quarto and Markdown</a></li>
+  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">3.2</span> Resources</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Scratch Pad</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">RStudio</span></h1>
 </div>
 
 
@@ -174,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024-10-02</p>
+      <p class="date">2024-11-08</p>
     </div>
   </div>
   
@@ -186,9 +197,45 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Just a place for quick notes</p>
+<section id="getting-started-with-rstudio" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="getting-started-with-rstudio"><span class="header-section-number">3.1</span> Getting Started with RStudio</h2>
+<section id="r-markdown" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="r-markdown"><span class="header-section-number">3.1.1</span> R Markdown</h3>
+<p><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown</a> is a flavor of <a href="https://www.markdownguide.org/">Markdown</a> used to write richly formatted documents, while retaining maximum portability. Markdown documents are text documents and can be opened by virtually any computer or word processing program. In fact, all (AFAIK) modern computer operating systems have pre-installed applications that can read and edit text documents. R Markdown as been developed to integrate well with the R programming language such that you can write text and run code in the same document. To see how R Markdown is used in RStudio, visit the <a href="https://rmarkdown.rstudio.com/lesson-1.html">Get Started</a> section of the <a href="https://rmarkdown.rstudio.com/index.html">R Markdown from RStudio</a> website.</p>
+<p>Markdown was created by <a href="https://daringfireball.net/projects/markdown/">John Gruber</a> in 2004 as an easy to read and type markup language. Documents written in Markdown can be easily converted to HTML (the language of the web) PDF, or even MS Word.</p>
+<p>For information about Quarto, see <a href="https://r4ds.hadley.nz/quarto">Chapter 28 Quarto</a>. Note that Quarto is implemented natively in RStudio, so you do not need to use the command line (unless you want to).</p>
+<section id="writing-in-markdown" class="level4" data-number="3.1.1.1">
+<h4 data-number="3.1.1.1" class="anchored" data-anchor-id="writing-in-markdown"><span class="header-section-number">3.1.1.1</span> Writing in Markdown</h4>
+<p>See the <a href="https://www.markdownguide.org/">Markdown Guide</a> and pay particular attention to the sections on <a href="https://www.markdownguide.org/basic-syntax/">Basic Syntax</a> and <a href="https://www.markdownguide.org/extended-syntax/">Extended Syntax</a> for how to properly format Markdown documents.</p>
+</section>
+</section>
+<section id="quarto-and-markdown" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="quarto-and-markdown"><span class="header-section-number">3.1.2</span> Quarto and Markdown</h3>
+<p>We are using Quarto documents in RStudio. Quarto is a slightly different “flavor” of Markdown based on <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">Pandoc Markdown</a>.</p>
+<blockquote class="blockquote">
+<p>Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+</blockquote>
+<p>See the Quarto <a href="https://quarto.org/docs/authoring/markdown-basics.html">Markdown Basics</a> page for more information about the syntax used by Quarto Markdown.</p>
+</section>
+</section>
+<section id="resources" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="resources"><span class="header-section-number">3.2</span> Resources</h2>
+<ul>
+<li><a href="https://rmarkdown.rstudio.com/index.html">R Markdown from RStudio</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/">R Markdown: The Definitive Guide</a></li>
+<li><a href="https://www.markdownguide.org/">Markdown Guide</a></li>
+<li><a href="https://r4ds.hadley.nz/quarto">Chapter 28 Quarto</a> in the <a href="https://r4ds.hadley.nz/">R for Data Science</a> online book.</li>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a> for all things R. This is an excellent resource.</li>
+</ul>
 
 
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p><a href="https://quarto.org/docs/authoring/markdown-basics.html">Quarto Markdown Basics</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -580,13 +627,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./gromacs-tutorial.html" class="pagination-link  aria-label=" &lt;span="" tutorial&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GROMACS Tutorial</span></span>
+      <a href="./software-needed.html" class="pagination-link  aria-label=" &lt;span="" needed&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Software Needed</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="References">
-        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./gromacs-tutorial.html" class="pagination-link" aria-label="<span class='chapter-number'>4</span>&nbsp; <span class='chapter-title'>GROMACS Tutorial</span>">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">GROMACS Tutorial</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

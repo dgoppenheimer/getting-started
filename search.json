@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Getting Started",
     "section": "",
-    "text": "Preface\nThis site describes how to get your lab notebook.\nGo to the 2  Software Needed section to get started.\nThen take the 3  GROMACS Tutorial.",
+    "text": "Preface\nThis site describes how to get your lab notebook.\nGo to the 2  Software Needed section to get started.\nThen take the 4  GROMACS Tutorial.",
     "crumbs": [
       "Preface"
     ]
@@ -150,23 +150,63 @@
     ]
   },
   {
+    "objectID": "rstudio.html",
+    "href": "rstudio.html",
+    "title": "3  RStudio",
+    "section": "",
+    "text": "3.1 Getting Started with RStudio",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "rstudio.html#getting-started-with-rstudio",
+    "href": "rstudio.html#getting-started-with-rstudio",
+    "title": "3  RStudio",
+    "section": "",
+    "text": "3.1.1 R Markdown\nR Markdown is a flavor of Markdown used to write richly formatted documents, while retaining maximum portability. Markdown documents are text documents and can be opened by virtually any computer or word processing program. In fact, all (AFAIK) modern computer operating systems have pre-installed applications that can read and edit text documents. R Markdown as been developed to integrate well with the R programming language such that you can write text and run code in the same document. To see how R Markdown is used in RStudio, visit the Get Started section of the R Markdown from RStudio website.\nMarkdown was created by John Gruber in 2004 as an easy to read and type markup language. Documents written in Markdown can be easily converted to HTML (the language of the web) PDF, or even MS Word.\nFor information about Quarto, see Chapter 28 Quarto. Note that Quarto is implemented natively in RStudio, so you do not need to use the command line (unless you want to).\n\n3.1.1.1 Writing in Markdown\nSee the Markdown Guide and pay particular attention to the sections on Basic Syntax and Extended Syntax for how to properly format Markdown documents.\n\n\n\n3.1.2 Quarto and Markdown\nWe are using Quarto documents in RStudio. Quarto is a slightly different “flavor” of Markdown based on Pandoc Markdown.\n\nQuarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax1.\n\nSee the Quarto Markdown Basics page for more information about the syntax used by Quarto Markdown.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "rstudio.html#resources",
+    "href": "rstudio.html#resources",
+    "title": "3  RStudio",
+    "section": "3.2 Resources",
+    "text": "3.2 Resources\n\nR Markdown from RStudio\nR Markdown: The Definitive Guide\nMarkdown Guide\nChapter 28 Quarto in the R for Data Science online book.\nR for Data Science (2e) for all things R. This is an excellent resource.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RStudio</span>"
+    ]
+  },
+  {
+    "objectID": "rstudio.html#footnotes",
+    "href": "rstudio.html#footnotes",
+    "title": "3  RStudio",
+    "section": "",
+    "text": "Quarto Markdown Basics↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>RStudio</span>"
+    ]
+  },
+  {
     "objectID": "gromacs-tutorial.html",
     "href": "gromacs-tutorial.html",
-    "title": "3  GROMACS Tutorial",
+    "title": "4  GROMACS Tutorial",
     "section": "",
     "text": "An exceptionally good tutorial of an intrinsically disordered protein has been developed by the Bonvin Lab.\nThe tutorial was developed as part of the Structural Bioinformatics & Modelling course maintained by Utrecht University.\nClick the link below to go to the tutorial.\nMolecular Dynamics Simulation of the p53 N-terminal peptide",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>GROMACS Tutorial</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>GROMACS Tutorial</span>"
     ]
   },
   {
     "objectID": "scratch-pad.html",
     "href": "scratch-pad.html",
-    "title": "4  Scratch Pad",
+    "title": "5  Scratch Pad",
     "section": "",
     "text": "Just a place for quick notes",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Scratch Pad</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Scratch Pad</span>"
     ]
   }
 ]
